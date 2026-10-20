@@ -33,3 +33,6 @@ private/
 
 # generated demo data (regenerate: python scripts/data/generate.py --seed 42)
 data/synthetic/*/
+
+# demo video media (voice, raw recordings, final mp4)
+media/

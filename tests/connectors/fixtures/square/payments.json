@@ -1,0 +1,4 @@
+{"payments":[
+ {"id":"PAY1","order_id":"ORD1","source_type":"CARD","amount_money":{"amount":1300,"currency":"GBP"},"tip_money":{"amount":100,"currency":"GBP"},
+  "processing_fee":[{"effective_at":"2026-10-19T00:00:00Z","type":"INITIAL","amount_money":{"amount":23,"currency":"GBP"}}],"card_details":{"card":{"card_brand":"VISA"}}},
+ {"id":"PAY2","order_id":"ORD2","source_type":"CASH","amount_money":{"amount":1200,"currency":"GBP"}}]}

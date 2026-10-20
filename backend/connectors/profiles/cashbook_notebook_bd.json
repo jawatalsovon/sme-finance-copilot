@@ -1,0 +1,10 @@
+{"id":"cashbook_notebook_bd","name":"Cash-book notebook (Date, Details, Head, Mode, In, Out, Note) - Mirpur Family Store labels","target":"cashbook",
+ "description":"Google-Sheets style hisab. Labels are matched to account CODES (typos tolerated). Owner-confirmed for the demo grocer.",
+ "detect":["Date","Details","Head","Mode","In","Out","Note"],
+ "columns":{"date":"Date","details":"Details","head":"Head","mode":"Mode","in":"In","out":"Out","note":"Note"},
+ "options":{"source_system":"gsheets","account_map":{
+   "modes":{"Cash":"1000","Bank":"1100","bKash":"1150","Baki":"1200","Stock":"1300","Dadon":"1350","Equipment":"1500","Udhar":"2000","Loan principal":"2300","Capital":"3000"},
+   "heads":{"Sales":"4000","Sale":"4000","Baki collection":"1200","Purchase":"1300","Charges":"6400","Charge":"6400","bkash charge":"6400","Supplier payment":"2000","Delivery":"6300",
+     "Transfer from bKash":"1150","Transfer to Bank":"1100","Transfer from bank":"1100","Transfer from cash":"1000","Salary":"6000","Misc":"6600","Utilities":"6200","Electric":"6200",
+     "Loan principal":"2300","Loan interest":"6800","Drawings":"3100","COGS (stock count)":"5000","Rent":"6100","Dadon":"1350","Repair":"6500","Licence":"6700","Capital":"3000",
+     "Other income":"4900","Bad debt":"6900","Equipment":"1500","Stock loss":"5100"}}}}

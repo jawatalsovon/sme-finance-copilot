@@ -1,0 +1,158 @@
+[
+ {
+  "Id": "35",
+  "Name": "Checking",
+  "FullyQualifiedName": "Checking",
+  "AcctNum": "1000",
+  "AccountType": "Bank",
+  "AccountSubType": "Checking",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "36",
+  "Name": "Savings",
+  "FullyQualifiedName": "Savings",
+  "AcctNum": "1010",
+  "AccountType": "Bank",
+  "AccountSubType": "Savings",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "33",
+  "Name": "Accounts Receivable (A/R)",
+  "FullyQualifiedName": "Accounts Receivable (A/R)",
+  "AcctNum": "1200",
+  "AccountType": "Accounts Receivable",
+  "AccountSubType": "AccountsReceivable",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "81",
+  "Name": "Inventory Asset",
+  "FullyQualifiedName": "Inventory Asset",
+  "AcctNum": "1300",
+  "AccountType": "Other Current Asset",
+  "AccountSubType": "Inventory",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "84",
+  "Name": "Undeposited Funds",
+  "FullyQualifiedName": "Undeposited Funds",
+  "AcctNum": "1100",
+  "AccountType": "Other Current Asset",
+  "AccountSubType": "UndepositedFunds",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "49",
+  "Name": "Accounts Payable (A/P)",
+  "FullyQualifiedName": "Accounts Payable (A/P)",
+  "AcctNum": "2000",
+  "AccountType": "Accounts Payable",
+  "AccountSubType": "AccountsPayable",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "89",
+  "Name": "Sales Tax Payable",
+  "FullyQualifiedName": "Sales Tax Payable",
+  "AcctNum": "2200",
+  "AccountType": "Other Current Liability",
+  "AccountSubType": "SalesTaxPayable",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "4",
+  "Name": "Opening Balance Equity",
+  "FullyQualifiedName": "Opening Balance Equity",
+  "AcctNum": "3000",
+  "AccountType": "Equity",
+  "AccountSubType": "OpeningBalanceEquity",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "1",
+  "Name": "Sales of Product Income",
+  "FullyQualifiedName": "Sales of Product Income",
+  "AcctNum": "4000",
+  "AccountType": "Income",
+  "AccountSubType": "SalesOfProductIncome",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "79",
+  "Name": "Cost of Goods Sold",
+  "FullyQualifiedName": "Cost of Goods Sold",
+  "AcctNum": "5000",
+  "AccountType": "Cost of Goods Sold",
+  "AccountSubType": "SuppliesMaterialsCogs",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "62",
+  "Name": "Rent or Lease",
+  "FullyQualifiedName": "Rent or Lease",
+  "AcctNum": "6100",
+  "AccountType": "Expense",
+  "AccountSubType": "RentOrLeaseOfBuildings",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "7",
+  "Name": "Utilities",
+  "FullyQualifiedName": "Utilities",
+  "AcctNum": "6200",
+  "AccountType": "Expense",
+  "AccountSubType": "Utilities",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ },
+ {
+  "Id": "77",
+  "Name": "Office Expenses",
+  "FullyQualifiedName": "Office Expenses",
+  "AcctNum": "6300",
+  "AccountType": "Expense",
+  "AccountSubType": "OfficeGeneralAdministrativeExpenses",
+  "Active": true,
+  "CurrencyRef": {
+   "value": "USD"
+  }
+ }
+]

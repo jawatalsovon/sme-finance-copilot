@@ -1,0 +1,4 @@
+{"id":"wise_statement","name":"Wise-style multi-currency statement","target":"statement","description":"One file per currency balance; signed Amount, own Currency column, Total fees.",
+ "detect":["TransferWise ID","Running Balance","Total fees","Currency"],
+ "columns":{"date":"Date","description":"Description","counterparty":["Payer Name","Payee Name"],"external_txn_id":"TransferWise ID","reference":"Payment Reference","amount":"Amount","fee":"Total fees","balance":"Running Balance","currency":"Currency"},
+ "options":{"channel":"bank","source_system":"wallet_csv","amount_mode":"signed","dayfirst":true}}

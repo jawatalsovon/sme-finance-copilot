@@ -1,0 +1,4 @@
+{"id":"bkash_wallet","name":"bKash-style wallet statement","target":"statement","description":"Mobile-money merchant statement: Credit = gross received, Fee is deducted from the balance.",
+ "detect":["TrxID","Transaction Type","Credit","Debit","Fee","Balance"],
+ "columns":{"date":"Date","description":"Transaction Type","counterparty":"Counterparty","external_txn_id":"TrxID","reference":"Reference","credit":"Credit","debit":"Debit","fee":"Fee","balance":"Balance"},
+ "options":{"channel":"wallet","source_system":"wallet_csv","amount_mode":"split","dayfirst":true,"fee_deducted":true}}

@@ -1,0 +1,26 @@
+[
+ {
+  "Id": "301",
+  "TxnDate": "2026-08-25",
+  "TotalAmt": 1080.0,
+  "CustomerRef": {
+   "value": "1",
+   "name": "Amy's Bird Sanctuary"
+  },
+  "DepositToAccountRef": {
+   "value": "35"
+  },
+  "PaymentRefNum": "CHK-4411",
+  "Line": [
+   {
+    "Amount": 1080.0,
+    "LinkedTxn": [
+     {
+      "TxnId": "101",
+      "TxnType": "Invoice"
+     }
+    ]
+   }
+  ]
+ }
+]

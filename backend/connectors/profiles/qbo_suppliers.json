@@ -1,0 +1,2 @@
+{"id":"qbo_suppliers","name":"QuickBooks-style supplier list CSV","target":"parties","detect":["Supplier","Terms"],
+ "columns":{"name":"Supplier","terms":"Terms"},"options":{"kind":"supplier","source_system":"quickbooks"}}

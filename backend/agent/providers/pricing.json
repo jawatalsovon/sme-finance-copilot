@@ -1,0 +1,17 @@
+{
+  "_comment": "USD per 1M tokens. EDIT before relying on real spend numbers: verify each price on the provider's pricing page. Unknown models fall back to _default, which is deliberately high so the cap errs on the safe side.",
+  "_default": {"input_per_mtok": 15.0, "output_per_mtok": 75.0},
+  "mock": {
+    "mock-1": {"input_per_mtok": 0.0, "output_per_mtok": 0.0}
+  },
+  "openai": {
+    "gpt-4o-mini": {"input_per_mtok": 0.15, "output_per_mtok": 0.60},
+    "gpt-4o": {"input_per_mtok": 2.50, "output_per_mtok": 10.00},
+    "gpt-4.1-mini": {"input_per_mtok": 0.40, "output_per_mtok": 1.60},
+    "gpt-4.1": {"input_per_mtok": 2.00, "output_per_mtok": 8.00}
+  },
+  "anthropic": {
+    "claude-haiku-5-5": {"input_per_mtok": 1.00, "output_per_mtok": 5.00},
+    "claude-sonnet-5-5": {"input_per_mtok": 3.00, "output_per_mtok": 15.00}
+  }
+}

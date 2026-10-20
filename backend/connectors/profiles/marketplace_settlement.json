@@ -1,0 +1,4 @@
+{"id":"marketplace_settlement","name":"Marketplace settlement report (Amazon V2 style)","target":"statement","description":"Settlement summary row (payout total) followed by order/fee/refund detail rows. Lines land on the settlement-clearing account; a closed settlement nets to zero.",
+ "detect":["settlement-id","total-amount","transaction-type","amount-description","posted-date"],
+ "columns":{"settlement_id":"settlement-id","total_amount":"total-amount","deposit_date":"deposit-date","currency":"currency","type":"transaction-type","description":"amount-description","amount":"amount","posted_date":"posted-date"},
+ "options":{"channel":"pos_settlement","source_system":"marketplace_settlement","layout":"settlement"}}

@@ -1,0 +1,28 @@
+[
+ {
+  "Id": "401",
+  "TxnDate": "2026-09-05",
+  "TotalAmt": 500.0,
+  "VendorRef": {
+   "value": "11",
+   "name": "Hicks Hardware"
+  },
+  "PayType": "Check",
+  "CheckPayment": {
+   "BankAccountRef": {
+    "value": "35"
+   }
+  },
+  "Line": [
+   {
+    "Amount": 500.0,
+    "LinkedTxn": [
+     {
+      "TxnId": "201",
+      "TxnType": "Bill"
+     }
+    ]
+   }
+  ]
+ }
+]

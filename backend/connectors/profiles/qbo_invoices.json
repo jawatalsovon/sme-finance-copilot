@@ -1,0 +1,3 @@
+{"id":"qbo_invoices","name":"QuickBooks-importable invoices CSV","target":"invoices","detect":["InvoiceNo","Customer","InvoiceDate","ItemAmount"],
+ "columns":{"number":"InvoiceNo","party":"Customer","issue_date":"InvoiceDate","due_date":"DueDate","terms":"Terms","item":"Item(Product/Service)","amount":"ItemAmount","tax":"ItemTaxAmount","currency":"Currency"},
+ "options":{"source_system":"quickbooks","dayfirst":true}}

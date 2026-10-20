@@ -1,0 +1,3 @@
+{"id":"qbo_bills","name":"QuickBooks-importable bills CSV","target":"bills","detect":["BillNo","Supplier","BillDate","LineAmount"],
+ "columns":{"number":"BillNo","party":"Supplier","issue_date":"BillDate","due_date":"DueDate","terms":"Terms","category":"Category","amount":"LineAmount","tax":"LineTaxAmount","currency":"Currency"},
+ "options":{"source_system":"quickbooks","dayfirst":true}}

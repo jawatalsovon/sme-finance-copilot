@@ -1,0 +1,25 @@
+[
+ {
+  "Id": "601",
+  "DocNumber": "SR-1",
+  "TxnDate": "2026-09-12",
+  "TotalAmt": 216.0,
+  "DepositToAccountRef": {
+   "value": "35"
+  },
+  "TxnTaxDetail": {
+   "TotalTax": 16.0
+  },
+  "Line": [
+   {
+    "DetailType": "SalesItemLineDetail",
+    "Amount": 200.0,
+    "SalesItemLineDetail": {
+     "ItemRef": {
+      "value": "2"
+     }
+    }
+   }
+  ]
+ }
+]

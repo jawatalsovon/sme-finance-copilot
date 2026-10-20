@@ -1,0 +1,4 @@
+{"id":"bank_withdrawal_deposit","name":"Bank statement: Withdrawal / Deposit","target":"statement","description":"Txn Date, Value Date, Narration, Chq/Ref No, Withdrawal, Deposit, Balance (Bangladeshi-bank style).",
+ "detect":["Txn Date","Narration","Withdrawal","Deposit","Balance"],
+ "columns":{"date":"Txn Date","value_date":"Value Date","description":"Narration","reference":"Chq/Ref No","debit":"Withdrawal","credit":"Deposit","balance":"Balance"},
+ "options":{"channel":"bank","source_system":"bank_csv","amount_mode":"split","dayfirst":true}}

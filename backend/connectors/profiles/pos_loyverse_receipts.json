@@ -1,0 +1,4 @@
+{"id":"pos_loyverse_receipts","name":"Loyverse receipts export (one row per receipt)","target":"pos_loyverse",
+ "detect":["Receipt number","Receipt type","Gross sales","Net sales","Taxes","Total collected","Payment type"],
+ "columns":{"datetime":"Date","order_id":"Receipt number","type":"Receipt type","gross":"Gross sales","discount":"Discounts","net":"Net sales","tax":"Taxes","total":"Total collected","method":"Payment type","description":"Description"},
+ "options":{"source_system":"loyverse_pos","times_are_utc":true,"timezone":"Europe/London"}}

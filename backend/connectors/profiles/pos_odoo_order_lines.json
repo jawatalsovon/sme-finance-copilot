@@ -1,0 +1,4 @@
+{"id":"pos_odoo_order_lines","name":"Odoo POS order lines export (one row per order line)","target":"pos_odoo",
+ "detect":["Order Ref","Session","Cashier","Product","Quantity","Unit Price","Subtotal","Taxes","Total","Payment Method"],
+ "columns":{"order_id":"Order Ref","datetime":"Date","session":"Session","staff":"Cashier","name":"Product","qty":"Quantity","unit_price":"Unit Price","subtotal":"Subtotal","tax":"Taxes","total":"Total","method":"Payment Method"},
+ "options":{"source_system":"odoo_pos","times_are_utc":true,"timezone":"Europe/London"}}

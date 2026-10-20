@@ -1,0 +1,864 @@
+{
+ "v1_series_check": {
+  "weeks_compared": 104,
+  "max_abs_diff_gbp": 400.0
+ },
+ "v1": {
+  "weeks": 104,
+  "first_week_start": "2009-12-07",
+  "last_week_start": "2011-11-28",
+  "holdout_13": {
+   "engine_smape": 21.2722525989807,
+   "seasonal_naive_smape": 21.176465230362407,
+   "per_model_smape": {
+    "seasonal_naive": 19.76635184846563,
+    "holt_winters": 19.76635184846563,
+    "theta": 51.02845260453349,
+    "ensemble": 21.2722525989807
+   }
+  },
+  "holdout_26": {
+   "engine_smape": 20.43225436131915,
+   "seasonal_naive_smape": 17.664577619965723,
+   "per_model_smape": {
+    "seasonal_naive": 19.137085068868178,
+    "holt_winters": 19.137085068868178,
+    "theta": 34.82580667589151,
+    "ensemble": 20.43225436131915
+   }
+  },
+  "rolling4": {
+   "origins": 26,
+   "engine_smape": 14.523265181045609,
+   "seasonal_naive_smape": 16.801987403824974
+  }
+ },
+ "v4": {
+  "series_total": 2674,
+  "series_complete": 2509,
+  "sampled": 200,
+  "evaluated": 199,
+  "horizon_months": 12,
+  "median_mase": {
+   "engine": 0.7522652425898083,
+   "seasonal_naive": 0.7916666666666666,
+   "naive": 0.5757575757575757,
+   "mean12": 0.7916666666666666,
+   "zero": 0.35185185185185186
+  },
+  "mean_mase": {
+   "engine": 1.0673279756517768,
+   "seasonal_naive": 1.076983400940132,
+   "naive": 1.4391404409136346,
+   "mean12": 1.0009078437924221,
+   "zero": 0.613819972347798
+  },
+  "share_engine_beats_seasonal_naive": 0.542713567839196,
+  "share_engine_beats_naive": 0.31155778894472363,
+  "ties_with_seasonal_naive": 0
+ },
+ "v2": {
+  "rows": 18719,
+  "suppliers": 1187,
+  "dates": [
+   "2025-08-01",
+   "2025-10-31"
+  ],
+  "share_rows_in_schedules": 0.6210267642502271,
+  "baselines_untouched": {
+   "r0_pairs": 7221,
+   "r0_flags_per_1000": 385.7577862065281,
+   "r1_pairs": 1419,
+   "r1_flags_per_1000": 75.80533148138255
+  },
+  "injected_baselines": {
+   "seed": 42,
+   "r0": {
+    "flagged_pairs": 7371,
+    "pairs_with_injected_row": 150,
+    "recall_split": {
+     "copies_of_one_off_payments": {
+      "injected": 150,
+      "recall": 0.46
+     },
+     "copies_of_schedule_payments": {
+      "injected": 200,
+      "recall": 0.405
+     }
+    },
+    "precision_strict": 0.02035002035002035,
+    "recall": 0.42857142857142855,
+    "per_kind": {
+     "amount_typo": {
+      "injected": 50,
+      "found": 0,
+      "recall": 0.0
+     },
+     "exact_repeat": {
+      "injected": 150,
+      "found": 150,
+      "recall": 1.0
+     },
+     "near_repeat": {
+      "injected": 100,
+      "found": 0,
+      "recall": 0.0
+     },
+     "reversal": {
+      "injected": 50,
+      "found": 0,
+      "recall": 0.0
+     }
+    }
+   },
+   "r1": {
+    "flagged_pairs": 1488,
+    "pairs_with_injected_row": 69,
+    "recall_split": {
+     "copies_of_one_off_payments": {
+      "injected": 150,
+      "recall": 0.46
+     },
+     "copies_of_schedule_payments": {
+      "injected": 200,
+      "recall": 0.0
+     }
+    },
+    "precision_strict": 0.046370967741935484,
+    "recall": 0.19714285714285715,
+    "per_kind": {
+     "amount_typo": {
+      "injected": 50,
+      "found": 0,
+      "recall": 0.0
+     },
+     "exact_repeat": {
+      "injected": 150,
+      "found": 69,
+      "recall": 0.46
+     },
+     "near_repeat": {
+      "injected": 100,
+      "found": 0,
+      "recall": 0.0
+     },
+     "reversal": {
+      "injected": 50,
+      "found": 0,
+      "recall": 0.0
+     }
+    }
+   }
+  },
+  "engine_core": {
+   "rules": [
+    "exact_repeat",
+    "near_repeat",
+    "amount_typo",
+    "reversal"
+   ],
+   "untouched_candidates": 2394,
+   "untouched_by_rule": {
+    "exact_repeat": 1340,
+    "amount_typo": 880,
+    "near_repeat": 174
+   },
+   "untouched_flags_per_1000": 127.89144719269191,
+   "injected": {
+    "flagged_pairs": 2570,
+    "pairs_with_injected_row": 186,
+    "recall_split": {
+     "copies_of_one_off_payments": {
+      "injected": 150,
+      "recall": 0.9666666666666667
+     },
+     "copies_of_schedule_payments": {
+      "injected": 200,
+      "recall": 0.205
+     }
+    },
+    "precision_strict": 0.07237354085603113,
+    "recall": 0.5314285714285715,
+    "per_kind": {
+     "amount_typo": {
+      "injected": 50,
+      "found": 34,
+      "recall": 0.68
+     },
+     "exact_repeat": {
+      "injected": 150,
+      "found": 69,
+      "recall": 0.46
+     },
+     "near_repeat": {
+      "injected": 100,
+      "found": 36,
+      "recall": 0.36
+     },
+     "reversal": {
+      "injected": 50,
+      "found": 47,
+      "recall": 0.94
+     }
+    }
+   }
+  },
+  "audit_top50": [
+   {
+    "rank": 1,
+    "rule": "exact_repeat",
+    "supplier": "SUP-6A793E",
+    "expense_type": "Public Health Payments",
+    "date_a": "2025-10-23",
+    "date_b": "2025-10-23",
+    "amount_a": 564471.75,
+    "amount_b": 564471.75,
+    "row_a": "bx-bexley_2025-10.csv-5258",
+    "row_b": "bx-bexley_2025-10.csv-5259"
+   },
+   {
+    "rank": 2,
+    "rule": "amount_typo",
+    "supplier": "SUP-1A3140",
+    "expense_type": "PFI and PPP Schemes",
+    "date_a": "2025-08-28",
+    "date_b": "2025-08-28",
+    "amount_a": 305670.73,
+    "amount_b": 315240.1,
+    "row_a": "bx-bexley_2025-08.csv-1795",
+    "row_b": "bx-bexley_2025-08.csv-1796"
+   },
+   {
+    "rank": 3,
+    "rule": "amount_typo",
+    "supplier": "SUP-060AAF",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 105487.2,
+    "amount_b": 114504.39,
+    "row_a": "bx-bexley_2025-08.csv-3039",
+    "row_b": "bx-bexley_2025-08.csv-3040"
+   },
+   {
+    "rank": 4,
+    "rule": "amount_typo",
+    "supplier": "SUP-FF443F",
+    "expense_type": "SP top-up funding Primary",
+    "date_a": "2025-10-01",
+    "date_b": "2025-10-01",
+    "amount_a": 103853.83,
+    "amount_b": 112344.72,
+    "row_a": "bx-bexley_2025-10.csv-5722",
+    "row_b": "bx-bexley_2025-10.csv-5723"
+   },
+   {
+    "rank": 5,
+    "rule": "amount_typo",
+    "supplier": "SUP-F4234E",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 78877.64,
+    "amount_b": 85533.62,
+    "row_a": "bx-bexley_2025-08.csv-544",
+    "row_b": "bx-bexley_2025-08.csv-545"
+   },
+   {
+    "rank": 6,
+    "rule": "amount_typo",
+    "supplier": "SUP-F7E3F5",
+    "expense_type": "Private Contractors - General",
+    "date_a": "2025-09-26",
+    "date_b": "2025-09-26",
+    "amount_a": 71133.61,
+    "amount_b": 71652.0,
+    "row_a": "bx-bexley_2025-09.csv-956",
+    "row_b": "bx-bexley_2025-09.csv-957"
+   },
+   {
+    "rank": 7,
+    "rule": "amount_typo",
+    "supplier": "SUP-5C9971",
+    "expense_type": "3 & 4 year old funding",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 64941.24,
+    "amount_b": 67661.69,
+    "row_a": "bx-bexley_2025-08.csv-5096",
+    "row_b": "bx-bexley_2025-08.csv-5097"
+   },
+   {
+    "rank": 8,
+    "rule": "amount_typo",
+    "supplier": "SUP-060AAF",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 53999.4,
+    "amount_b": 55517.28,
+    "row_a": "bx-bexley_2025-08.csv-3037",
+    "row_b": "bx-bexley_2025-08.csv-3038"
+   },
+   {
+    "rank": 9,
+    "rule": "amount_typo",
+    "supplier": "SUP-A94313",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 47720.4,
+    "amount_b": 52047.45,
+    "row_a": "bx-bexley_2025-08.csv-1981",
+    "row_b": "bx-bexley_2025-08.csv-1982"
+   },
+   {
+    "rank": 10,
+    "rule": "amount_typo",
+    "supplier": "SUP-71747F",
+    "expense_type": "InsuranceExclPremises&Trans",
+    "date_a": "2025-09-26",
+    "date_b": "2025-09-26",
+    "amount_a": 46955.0,
+    "amount_b": 47521.65,
+    "row_a": "bx-bexley_2025-09.csv-6414",
+    "row_b": "bx-bexley_2025-09.csv-6415"
+   },
+   {
+    "rank": 11,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CA1F9",
+    "expense_type": "Transport Costs Clients",
+    "date_a": "2025-08-04",
+    "date_b": "2025-08-04",
+    "amount_a": 40070.0,
+    "amount_b": 41573.5,
+    "row_a": "bx-bexley_2025-08.csv-76",
+    "row_b": "bx-bexley_2025-08.csv-77"
+   },
+   {
+    "rank": 12,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CAC2E",
+    "expense_type": "3 & 4 year old funding",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 35034.09,
+    "amount_b": 38452.05,
+    "row_a": "bx-bexley_2025-08.csv-1182",
+    "row_b": "bx-bexley_2025-08.csv-1183"
+   },
+   {
+    "rank": 13,
+    "rule": "amount_typo",
+    "supplier": "SUP-22CEF4",
+    "expense_type": "SP top-up funding Primary",
+    "date_a": "2025-09-15",
+    "date_b": "2025-09-15",
+    "amount_a": 37069.62,
+    "amount_b": 37455.53,
+    "row_a": "bx-bexley_2025-09.csv-6175",
+    "row_b": "bx-bexley_2025-09.csv-6169"
+   },
+   {
+    "rank": 14,
+    "rule": "amount_typo",
+    "supplier": "SUP-2ADA0F",
+    "expense_type": "Housing Temporary Accommodatio",
+    "date_a": "2025-08-05",
+    "date_b": "2025-08-05",
+    "amount_a": 34936.6,
+    "amount_b": 37274.0,
+    "row_a": "bx-bexley_2025-08.csv-6368",
+    "row_b": "bx-bexley_2025-08.csv-6369"
+   },
+   {
+    "rank": 15,
+    "rule": "amount_typo",
+    "supplier": "SUP-DDAB5F",
+    "expense_type": "3 & 4 year old funding",
+    "date_a": "2025-09-08",
+    "date_b": "2025-09-08",
+    "amount_a": 35888.58,
+    "amount_b": 36433.22,
+    "row_a": "bx-bexley_2025-09.csv-6338",
+    "row_b": "bx-bexley_2025-09.csv-6339"
+   },
+   {
+    "rank": 16,
+    "rule": "exact_repeat",
+    "supplier": "SUP-9E67EA",
+    "expense_type": "SP top-up funding Primary",
+    "date_a": "2025-09-24",
+    "date_b": "2025-09-24",
+    "amount_a": 35528.0,
+    "amount_b": 35528.0,
+    "row_a": "bx-bexley_2025-09.csv-3661",
+    "row_b": "bx-bexley_2025-09.csv-3662"
+   },
+   {
+    "rank": 17,
+    "rule": "amount_typo",
+    "supplier": "SUP-0D512C",
+    "expense_type": "Routine Roads Expenditure",
+    "date_a": "2025-10-20",
+    "date_b": "2025-10-20",
+    "amount_a": 33113.72,
+    "amount_b": 34746.71,
+    "row_a": "bx-bexley_2025-10.csv-1852",
+    "row_b": "bx-bexley_2025-10.csv-1853"
+   },
+   {
+    "rank": 18,
+    "rule": "amount_typo",
+    "supplier": "SUP-74EC49",
+    "expense_type": "Teachers Pay & Pensions Grants",
+    "date_a": "2025-09-04",
+    "date_b": "2025-09-04",
+    "amount_a": 30785.0,
+    "amount_b": 34022.0,
+    "row_a": "bx-bexley_2025-09.csv-924",
+    "row_b": "bx-bexley_2025-09.csv-925"
+   },
+   {
+    "rank": 19,
+    "rule": "near_repeat",
+    "supplier": "SUP-F7E3F5",
+    "expense_type": "Residual Waste",
+    "date_a": "2025-08-21",
+    "date_b": "2025-08-27",
+    "amount_a": 33366.05,
+    "amount_b": 33366.05,
+    "row_a": "bx-bexley_2025-08.csv-904",
+    "row_b": "bx-bexley_2025-08.csv-905"
+   },
+   {
+    "rank": 20,
+    "rule": "exact_repeat",
+    "supplier": "SUP-BEF450",
+    "expense_type": "Specialist Placements Resid",
+    "date_a": "2025-08-01",
+    "date_b": "2025-08-01",
+    "amount_a": 33338.0,
+    "amount_b": 33338.0,
+    "row_a": "bx-bexley_2025-08.csv-6542",
+    "row_b": "bx-bexley_2025-08.csv-6543"
+   },
+   {
+    "rank": 21,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CAC2E",
+    "expense_type": "Under 2 year old funding",
+    "date_a": "2025-09-17",
+    "date_b": "2025-09-17",
+    "amount_a": 32095.92,
+    "amount_b": 32650.8,
+    "row_a": "bx-bexley_2025-09.csv-1283",
+    "row_b": "bx-bexley_2025-09.csv-1270"
+   },
+   {
+    "rank": 22,
+    "rule": "exact_repeat",
+    "supplier": "SUP-B8BDC2",
+    "expense_type": "Specialist Placements Resid",
+    "date_a": "2025-08-14",
+    "date_b": "2025-08-14",
+    "amount_a": 30484.0,
+    "amount_b": 30484.0,
+    "row_a": "bx-bexley_2025-08.csv-448",
+    "row_b": "bx-bexley_2025-08.csv-449"
+   },
+   {
+    "rank": 23,
+    "rule": "amount_typo",
+    "supplier": "SUP-22CEF4",
+    "expense_type": "SP top-up funding Secondary",
+    "date_a": "2025-09-15",
+    "date_b": "2025-09-15",
+    "amount_a": 28912.02,
+    "amount_b": 29829.33,
+    "row_a": "bx-bexley_2025-09.csv-6176",
+    "row_b": "bx-bexley_2025-09.csv-6173"
+   },
+   {
+    "rank": 24,
+    "rule": "amount_typo",
+    "supplier": "SUP-746773",
+    "expense_type": "SP top-up funding Primary",
+    "date_a": "2025-10-15",
+    "date_b": "2025-10-15",
+    "amount_a": 27826.66,
+    "amount_b": 29580.67,
+    "row_a": "bx-bexley_2025-10.csv-3061",
+    "row_b": "bx-bexley_2025-10.csv-3062"
+   },
+   {
+    "rank": 25,
+    "rule": "amount_typo",
+    "supplier": "SUP-22CEF4",
+    "expense_type": "SP top-up funding Secondary",
+    "date_a": "2025-09-12",
+    "date_b": "2025-09-12",
+    "amount_a": 28932.21,
+    "amount_b": 29350.48,
+    "row_a": "bx-bexley_2025-09.csv-6177",
+    "row_b": "bx-bexley_2025-09.csv-6171"
+   },
+   {
+    "rank": 26,
+    "rule": "near_repeat",
+    "supplier": "SUP-22CEF4",
+    "expense_type": "SP top-up funding Primary",
+    "date_a": "2025-09-12",
+    "date_b": "2025-09-15",
+    "amount_a": 29350.48,
+    "amount_b": 29350.48,
+    "row_a": "bx-bexley_2025-09.csv-6171",
+    "row_b": "bx-bexley_2025-09.csv-6172"
+   },
+   {
+    "rank": 27,
+    "rule": "amount_typo",
+    "supplier": "SUP-63FBAD",
+    "expense_type": "Under 2 year old funding",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 25850.23,
+    "amount_b": 27983.41,
+    "row_a": "bx-bexley_2025-08.csv-5774",
+    "row_b": "bx-bexley_2025-08.csv-5775"
+   },
+   {
+    "rank": 28,
+    "rule": "amount_typo",
+    "supplier": "SUP-EE24E0",
+    "expense_type": "Top-up funding Secondary",
+    "date_a": "2025-10-10",
+    "date_b": "2025-10-10",
+    "amount_a": 25725.0,
+    "amount_b": 27114.5,
+    "row_a": "bx-bexley_2025-10.csv-5578",
+    "row_b": "bx-bexley_2025-10.csv-5579"
+   },
+   {
+    "rank": 29,
+    "rule": "amount_typo",
+    "supplier": "SUP-F3EDCE",
+    "expense_type": "SP top-up funding Secondary",
+    "date_a": "2025-10-15",
+    "date_b": "2025-10-15",
+    "amount_a": 25415.25,
+    "amount_b": 26824.67,
+    "row_a": "bx-bexley_2025-10.csv-1613",
+    "row_b": "bx-bexley_2025-10.csv-1614"
+   },
+   {
+    "rank": 30,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CAC2E",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-10-21",
+    "date_b": "2025-10-21",
+    "amount_a": 25439.0,
+    "amount_b": 26675.02,
+    "row_a": "bx-bexley_2025-10.csv-1304",
+    "row_b": "bx-bexley_2025-10.csv-1305"
+   },
+   {
+    "rank": 31,
+    "rule": "amount_typo",
+    "supplier": "SUP-65AC7F",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-10-21",
+    "date_b": "2025-10-21",
+    "amount_a": 25898.1,
+    "amount_b": 26405.88,
+    "row_a": "bx-bexley_2025-10.csv-5738",
+    "row_b": "bx-bexley_2025-10.csv-5739"
+   },
+   {
+    "rank": 32,
+    "rule": "exact_repeat",
+    "supplier": "SUP-049893",
+    "expense_type": "Leaving Care Staying Put",
+    "date_a": "2025-10-08",
+    "date_b": "2025-10-08",
+    "amount_a": 26021.8,
+    "amount_b": 26021.8,
+    "row_a": "bx-bexley_2025-10.csv-5491",
+    "row_b": "bx-bexley_2025-10.csv-5492"
+   },
+   {
+    "rank": 33,
+    "rule": "exact_repeat",
+    "supplier": "SUP-4919C3",
+    "expense_type": "Top-up funding Post-16",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 25650.0,
+    "amount_b": 25650.0,
+    "row_a": "bx-bexley_2025-08.csv-220",
+    "row_b": "bx-bexley_2025-08.csv-221"
+   },
+   {
+    "rank": 34,
+    "rule": "amount_typo",
+    "supplier": "SUP-E6C96A",
+    "expense_type": "Under 2 year old funding",
+    "date_a": "2025-08-28",
+    "date_b": "2025-08-28",
+    "amount_a": 24288.81,
+    "amount_b": 25634.7,
+    "row_a": "bx-bexley_2025-08.csv-1615",
+    "row_b": "bx-bexley_2025-08.csv-1616"
+   },
+   {
+    "rank": 35,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CAC2E",
+    "expense_type": "Under 2 year old funding",
+    "date_a": "2025-10-21",
+    "date_b": "2025-10-21",
+    "amount_a": 23511.36,
+    "amount_b": 25027.2,
+    "row_a": "bx-bexley_2025-10.csv-1302",
+    "row_b": "bx-bexley_2025-10.csv-1303"
+   },
+   {
+    "rank": 36,
+    "rule": "exact_repeat",
+    "supplier": "SUP-00D38E",
+    "expense_type": "Public Health Payments",
+    "date_a": "2025-09-08",
+    "date_b": "2025-09-08",
+    "amount_a": 25000.0,
+    "amount_b": 25000.0,
+    "row_a": "bx-bexley_2025-09.csv-6353",
+    "row_b": "bx-bexley_2025-09.csv-6354"
+   },
+   {
+    "rank": 37,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CAC2E",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 23860.2,
+    "amount_b": 24780.21,
+    "row_a": "bx-bexley_2025-08.csv-1179",
+    "row_b": "bx-bexley_2025-08.csv-1180"
+   },
+   {
+    "rank": 38,
+    "rule": "amount_typo",
+    "supplier": "SUP-807FAE",
+    "expense_type": "Construction & Conversion Cost",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 23900.0,
+    "amount_b": 24750.0,
+    "row_a": "bx-bexley_2025-08.csv-2027",
+    "row_b": "bx-bexley_2025-08.csv-2028"
+   },
+   {
+    "rank": 39,
+    "rule": "amount_typo",
+    "supplier": "SUP-BCC0BD",
+    "expense_type": "3 & 4 year old funding",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 22216.74,
+    "amount_b": 23860.2,
+    "row_a": "bx-bexley_2025-08.csv-1864",
+    "row_b": "bx-bexley_2025-08.csv-1865"
+   },
+   {
+    "rank": 40,
+    "rule": "amount_typo",
+    "supplier": "SUP-807FAE",
+    "expense_type": "Construction & Conversion Cost",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 22990.0,
+    "amount_b": 23278.0,
+    "row_a": "bx-bexley_2025-08.csv-2025",
+    "row_b": "bx-bexley_2025-08.csv-2026"
+   },
+   {
+    "rank": 41,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CAC2E",
+    "expense_type": "Under 2 year old funding",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 20818.98,
+    "amount_b": 22553.9,
+    "row_a": "bx-bexley_2025-08.csv-1177",
+    "row_b": "bx-bexley_2025-08.csv-1178"
+   },
+   {
+    "rank": 42,
+    "rule": "amount_typo",
+    "supplier": "SUP-E6C96A",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-08-28",
+    "date_b": "2025-08-28",
+    "amount_a": 21348.6,
+    "amount_b": 22216.74,
+    "row_a": "bx-bexley_2025-08.csv-1613",
+    "row_b": "bx-bexley_2025-08.csv-1614"
+   },
+   {
+    "rank": 43,
+    "rule": "amount_typo",
+    "supplier": "SUP-738382",
+    "expense_type": "2 year olds Working Parents",
+    "date_a": "2025-08-26",
+    "date_b": "2025-08-26",
+    "amount_a": 20092.8,
+    "amount_b": 22216.74,
+    "row_a": "bx-bexley_2025-08.csv-5222",
+    "row_b": "bx-bexley_2025-08.csv-5223"
+   },
+   {
+    "rank": 44,
+    "rule": "exact_repeat",
+    "supplier": "SUP-E594FD",
+    "expense_type": "SP top-up funding Secondary",
+    "date_a": "2025-09-08",
+    "date_b": "2025-09-08",
+    "amount_a": 21814.17,
+    "amount_b": 21814.17,
+    "row_a": "bx-bexley_2025-09.csv-366",
+    "row_b": "bx-bexley_2025-09.csv-367"
+   },
+   {
+    "rank": 45,
+    "rule": "exact_repeat",
+    "supplier": "SUP-E594FD",
+    "expense_type": "SP top-up funding Secondary",
+    "date_a": "2025-09-08",
+    "date_b": "2025-09-08",
+    "amount_a": 21814.17,
+    "amount_b": 21814.17,
+    "row_a": "bx-bexley_2025-09.csv-366",
+    "row_b": "bx-bexley_2025-09.csv-368"
+   },
+   {
+    "rank": 46,
+    "rule": "amount_typo",
+    "supplier": "SUP-0D512C",
+    "expense_type": "Highways Reactive Repairs",
+    "date_a": "2025-09-04",
+    "date_b": "2025-09-04",
+    "amount_a": 20953.32,
+    "amount_b": 21323.73,
+    "row_a": "bx-bexley_2025-09.csv-1851",
+    "row_b": "bx-bexley_2025-09.csv-1856"
+   },
+   {
+    "rank": 47,
+    "rule": "amount_typo",
+    "supplier": "SUP-1CAC2E",
+    "expense_type": "3 & 4 year old funding",
+    "date_a": "2025-10-21",
+    "date_b": "2025-10-21",
+    "amount_a": 19708.6,
+    "amount_b": 20878.96,
+    "row_a": "bx-bexley_2025-10.csv-1300",
+    "row_b": "bx-bexley_2025-10.csv-1301"
+   },
+   {
+    "rank": 48,
+    "rule": "exact_repeat",
+    "supplier": "SUP-F7E3F5",
+    "expense_type": "Street Cleansing",
+    "date_a": "2025-08-21",
+    "date_b": "2025-08-21",
+    "amount_a": 20566.3,
+    "amount_b": 20566.3,
+    "row_a": "bx-bexley_2025-08.csv-900",
+    "row_b": "bx-bexley_2025-08.csv-901"
+   },
+   {
+    "rank": 49,
+    "rule": "near_repeat",
+    "supplier": "SUP-F7E3F5",
+    "expense_type": "Street Cleansing",
+    "date_a": "2025-08-21",
+    "date_b": "2025-08-27",
+    "amount_a": 20566.3,
+    "amount_b": 20566.3,
+    "row_a": "bx-bexley_2025-08.csv-900",
+    "row_b": "bx-bexley_2025-08.csv-902"
+   },
+   {
+    "rank": 50,
+    "rule": "amount_typo",
+    "supplier": "SUP-0D512C",
+    "expense_type": "Routine Roads Expenditure",
+    "date_a": "2025-10-06",
+    "date_b": "2025-10-06",
+    "amount_a": 19757.6,
+    "amount_b": 20547.08,
+    "row_a": "bx-bexley_2025-10.csv-1850",
+    "row_b": "bx-bexley_2025-10.csv-1834"
+   }
+  ],
+  "engine_plus_schedule_rule": {
+   "rules": [
+    "exact_repeat",
+    "near_repeat",
+    "amount_typo",
+    "reversal",
+    "schedule_extra"
+   ],
+   "untouched_candidates": 4707,
+   "untouched_by_rule": {
+    "schedule_extra": 2313,
+    "exact_repeat": 1340,
+    "amount_typo": 880,
+    "near_repeat": 174
+   },
+   "untouched_flags_per_1000": 251.4557401570597,
+   "injected": {
+    "flagged_pairs": 4966,
+    "pairs_with_injected_row": 285,
+    "recall_split": {
+     "copies_of_one_off_payments": {
+      "injected": 150,
+      "recall": 0.9666666666666667
+     },
+     "copies_of_schedule_payments": {
+      "injected": 200,
+      "recall": 0.675
+     }
+    },
+    "precision_strict": 0.05739025372533226,
+    "recall": 0.8,
+    "per_kind": {
+     "amount_typo": {
+      "injected": 50,
+      "found": 34,
+      "recall": 0.68
+     },
+     "exact_repeat": {
+      "injected": 150,
+      "found": 122,
+      "recall": 0.8133333333333334
+     },
+     "near_repeat": {
+      "injected": 100,
+      "found": 77,
+      "recall": 0.77
+     },
+     "reversal": {
+      "injected": 50,
+      "found": 47,
+      "recall": 0.94
+     }
+    }
+   }
+  }
+ }
+}

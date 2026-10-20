@@ -1,0 +1,4 @@
+{"id":"cash_count","name":"Cash count (till / safe)","target":"statement","description":"count_date + counted cash total (currency in the header). One row per count.",
+ "detect":["count_date"],
+ "columns":{"date":"count_date","amount":["counted_cash_bdt","counted_cash_cny","counted_cash_gbp","counted_cash_usd","counted_cash_eur","counted_cash"]},
+ "options":{"channel":"cash_count","source_system":"cash_count","amount_mode":"signed","dayfirst":false}}

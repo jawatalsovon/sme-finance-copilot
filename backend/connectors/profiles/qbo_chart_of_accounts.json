@@ -1,0 +1,2 @@
+{"id":"qbo_chart_of_accounts","name":"QuickBooks-style chart of accounts CSV","target":"coa","detect":["Account Number","Account Name","Type","Detail Type"],
+ "columns":{"code":"Account Number","name":"Account Name","type":"Type","subtype":"Detail Type"},"options":{"source_system":"quickbooks"}}

@@ -1,0 +1,22 @@
+[
+ {
+  "Id": "501",
+  "TxnDate": "2026-09-01",
+  "TotalAmt": 1200.0,
+  "AccountRef": {
+   "value": "35"
+  },
+  "PaymentType": "Check",
+  "Line": [
+   {
+    "DetailType": "AccountBasedExpenseLineDetail",
+    "Amount": 1200.0,
+    "AccountBasedExpenseLineDetail": {
+     "AccountRef": {
+      "value": "62"
+     }
+    }
+   }
+  ]
+ }
+]

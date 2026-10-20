@@ -1,0 +1,7 @@
+{"orders":[{"id":"ORD2","location_id":"LHOLL","created_at":"2026-10-19T10:00:00Z","state":"COMPLETED",
+ "line_items":[{"name":"Bird food","quantity":"4","catalog_object_id":"CAT-BF","base_price_money":{"amount":250,"currency":"GBP"},
+   "gross_sales_money":{"amount":1000,"currency":"GBP"},"total_tax_money":{"amount":200,"currency":"GBP"},"total_discount_money":{"amount":0,"currency":"GBP"},
+   "total_money":{"amount":1200,"currency":"GBP"},"taxes":[{"type":"ADDITIVE","percentage":"20"}]}],
+ "total_money":{"amount":1200,"currency":"GBP"},"total_tax_money":{"amount":200,"currency":"GBP"},"total_discount_money":{"amount":0,"currency":"GBP"},
+ "tenders":[{"id":"TND2","payment_id":"PAY2","type":"CASH","amount_money":{"amount":1200,"currency":"GBP"}}],
+ "refunds":[{"id":"RF1","tender_id":"TND2","created_at":"2026-10-19T12:00:00Z","amount_money":{"amount":300,"currency":"GBP"},"status":"COMPLETED"}]}]}

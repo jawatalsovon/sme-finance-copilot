@@ -1,0 +1,812 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "R1 research agent",
+  "accessed_date": "2026-10-17",
+  "illustrative": true,
+  "notes": [
+    "All products are ILLUSTRATIVE summaries of public information for a demo. They are not offers, quotes or advice. The agent must never apply on the owner's behalf.",
+    "amount_* and tenor_* are null when no public figure was found. Rates are text because most sources give ranges or conditions.",
+    "documents_required lists are typical practice for this product type and are NOT taken from the cited source unless stated.",
+    "Each product has an 'unconfirmed' list naming facts that could not be verified from a primary or official source.",
+    "Eligibility rules use the field dictionary below. A rule with confirmed=false is an assumption and should be shown to the owner as such."
+  ],
+  "field_dictionary": {
+    "years_trading": "Years since the business started trading (number)",
+    "annual_revenue_local": "Trailing 12-month revenue in the product's currency (number)",
+    "annual_export_usd": "Trailing 12-month export revenue in USD (number)",
+    "sector": "Sector code from the SME profile (string)",
+    "country_registered": "ISO country where the business is registered (string)",
+    "cib_clear": "Not classified as a defaulter in the credit bureau (boolean; Bangladesh CIB)",
+    "foreign_invested": "Business is foreign-invested or foreign-owned (boolean)",
+    "tax_credit_grade": "Tax credit grade, China: A, B, M, C or D (string)",
+    "dscr": "Debt service cover ratio computed by the engine from the forecast (number)",
+    "months_card_sales": "Months of card or POS sales history available (number)",
+    "b2b_invoice_share": "Share of revenue invoiced on credit to businesses, 0 to 1 (number)",
+    "has_ecommerce_platform_history_months": "Months of marketplace sales history (number)",
+    "owner_age": "Age of the owner or legal representative (number)",
+    "tax_arrears": "Business has an unpaid tax bill it cannot pay in full (boolean)",
+    "insolvent": "Business is insolvent or in formal difficulty (boolean)",
+    "has_bkash_ekyc": "Owner has a wallet account with full biometric eKYC (boolean; Bangladesh)",
+    "needs_working_capital": "Stated need is working capital (boolean)"
+  },
+  "products": [
+    {
+      "id": "bd-bb-cmsme-wc-refinance-2026",
+      "country": "BD",
+      "name": "Bangladesh Bank CMSME Working Capital Refinance Fund (Tk 5,000 crore, revolving)",
+      "provider": "Bangladesh Bank refinance to participating scheduled banks; the bank lends",
+      "type": "central_bank_refinance_working_capital",
+      "currency": "BDT",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "Banks may charge borrowers at most 9% a year (Bangladesh Bank lends to the bank at 4%). Interest calculated quarterly. Grace period 3 to 6 months before instalments start. Scheme runs for 3 years from issue (announced 8 June 2026).",
+      "collateral": "Set by the lending bank; the bank bears recovery risk",
+      "eligibility": [
+        {
+          "field": "needs_working_capital",
+          "op": "==",
+          "value": true,
+          "confirmed": true
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "BD",
+          "confirmed": true
+        },
+        {
+          "field": "cib_clear",
+          "op": "==",
+          "value": true,
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Trade licence",
+        "TIN",
+        "12 months bank statements",
+        "Existing working-capital loan renewal letter, if any"
+      ],
+      "source_url": "https://thefinancialexpress.com.bd/economy/bb-launches-tk-50b-revolving-refinance-fund-for-cmsmes",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Per-borrower loan limit and tenor not in the article; check the Bangladesh Bank SME and Special Programmes Department circular",
+        "Issue date differs between sources (8 June vs possibly 8 August 2026)",
+        "Banks sign participation agreements one by one; the owner's own bank may not participate yet"
+      ]
+    },
+    {
+      "id": "bd-bank-unsecured-cmsme-loan",
+      "country": "BD",
+      "name": "Bank unsecured CMSME loan (collateral-free)",
+      "provider": "Commercial bank with a collateral-free SME programme (example: BRAC Bank)",
+      "type": "bank_term_loan_unsecured",
+      "currency": "BDT",
+      "amount_min": 100000,
+      "amount_max": 2500000,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "A promotional rate as low as 13.75% a year was reported for August and September 2025 and has probably expired. Without that offer, market rates are higher; the all-bank weighted average lending rate was 11.86% in June 2026 (secured and corporate loans included).",
+      "collateral": "None (collateral-free)",
+      "eligibility": [
+        {
+          "field": "years_trading",
+          "op": ">=",
+          "value": 1,
+          "confirmed": false
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "BD",
+          "confirmed": true
+        },
+        {
+          "field": "cib_clear",
+          "op": "==",
+          "value": true,
+          "confirmed": false
+        }
+      ],
+      "documents_required": [
+        "Valid trade licence",
+        "TIN",
+        "Proprietor NID",
+        "12 months bank statements",
+        "Business premises proof"
+      ],
+      "source_url": "https://thefinancialexpress.com.bd/trade/brac-bank-offers-record-low-collateral-free-loans-for-cmsmes",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Amount range is from a TBS article (Tk 1 to 25 lakh) and an older thesis (Tk 3 to 30 lakh); they disagree",
+        "Tenor not found",
+        "One-year trading minimum comes from an old thesis",
+        "Promotional rate expired"
+      ]
+    },
+    {
+      "id": "bd-bank-secured-overdraft",
+      "country": "BD",
+      "name": "Secured working-capital overdraft / cash credit (against FDR or property)",
+      "provider": "Scheduled commercial banks (generic product)",
+      "type": "bank_overdraft_secured",
+      "currency": "BDT",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": 12,
+      "tenor_months_max": 12,
+      "indicative_rate_text": "Not confirmed for a specific product. Context: all-bank weighted average lending rate 11.86% and NBFI 13.75% in June 2026 (Bangladesh Bank data as reported); banks price off the SMART reference rate plus a margin.",
+      "collateral": "Fixed deposit receipt, property or other security",
+      "eligibility": [
+        {
+          "field": "years_trading",
+          "op": ">=",
+          "value": 1,
+          "confirmed": false
+        },
+        {
+          "field": "cib_clear",
+          "op": "==",
+          "value": true,
+          "confirmed": false
+        }
+      ],
+      "documents_required": [
+        "Trade licence",
+        "TIN",
+        "12 months bank statements",
+        "Collateral documents",
+        "Stock and receivables statement"
+      ],
+      "source_url": "https://thefinancialexpress.com.bd/bangladesh/june-spread-remains-unchanged-at-57pc",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "No specific product page read; limits, tenor and fees are generic assumptions",
+        "Annual 12-month tenor assumed (usual review cycle)",
+        "Only the lending-rate context is sourced"
+      ]
+    },
+    {
+      "id": "bd-mfi-microenterprise-loan",
+      "country": "BD",
+      "name": "Microfinance institution (MFI) micro-enterprise loan",
+      "provider": "MRA-licensed microfinance institutions (for example BRAC, ASA, Grameen)",
+      "type": "microfinance_group_or_individual_loan",
+      "currency": "BDT",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "Rate cap of 24% a year on a declining balance (lowered from 27% to 24% in 2019, per secondary sources). The effective cost is often higher in practice.",
+      "collateral": "Usually none (group or personal guarantee)",
+      "eligibility": [
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "BD",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "NID",
+        "Proof of business or residence",
+        "Group membership or guarantor"
+      ],
+      "source_url": "https://www.tbsnews.net/economy/interest-rates-may-go-down-microcredit",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Current MRA cap was not read from the MRA itself",
+        "Loan size limits not found",
+        "Tenor not found",
+        "Not suited to a business with Tk 36 million turnover; included to show a low-fit match"
+      ]
+    },
+    {
+      "id": "bd-citybank-bkash-digital-nano-loan",
+      "country": "BD",
+      "name": "Digital nano loan through a wallet app (City Bank and bKash)",
+      "provider": "City Bank PLC via bKash app",
+      "type": "digital_nano_loan",
+      "currency": "BDT",
+      "amount_min": 500,
+      "amount_max": 50000,
+      "tenor_months_min": 1,
+      "tenor_months_max": 6,
+      "indicative_rate_text": "9% a year plus a processing fee of about 0.5% (0.575% including VAT in one report). A related Pay Later product is interest-free if repaid in 7 days.",
+      "collateral": "None",
+      "eligibility": [
+        {
+          "field": "has_bkash_ekyc",
+          "op": "==",
+          "value": true,
+          "confirmed": true
+        },
+        {
+          "field": "owner_age",
+          "op": ">=",
+          "value": 18,
+          "confirmed": false
+        }
+      ],
+      "documents_required": [
+        "bKash account with biometric eKYC"
+      ],
+      "source_url": "https://en.prothomalo.com/corporate/local/city-bank-bkash-introduce-digital-nano-loan",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Tk 50,000 limit is from one June 2025 Daily Star report; earlier reports say Tk 20,000",
+        "Tenor sources differ",
+        "A personal consumer-style product; suitable only for tiny cash gaps"
+      ]
+    },
+    {
+      "id": "cn-webank-weiyedai-working-capital",
+      "country": "CN",
+      "name": "WeBank Weiyedai (微业贷) online unsecured working-capital loan",
+      "provider": "WeBank (also offered as a co-lending version with Standard Chartered)",
+      "type": "bank_online_unsecured_working_capital",
+      "currency": "CNY",
+      "amount_min": null,
+      "amount_max": 3000000,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "Shown at signing; no fee beyond interest if no breach (per the Standard Chartered co-lending page). App-store pages cited a rate range of 2.88% to 18% a year; this is old and conflicting.",
+      "collateral": "None; guarantee by the legal representative",
+      "eligibility": [
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "CN",
+          "confirmed": true
+        },
+        {
+          "field": "years_trading",
+          "op": ">=",
+          "value": 1,
+          "confirmed": true
+        },
+        {
+          "field": "foreign_invested",
+          "op": "==",
+          "value": false,
+          "confirmed": true
+        },
+        {
+          "field": "owner_age",
+          "op": ">=",
+          "value": 21,
+          "confirmed": true
+        },
+        {
+          "field": "owner_age",
+          "op": "<=",
+          "value": 70,
+          "confirmed": true
+        },
+        {
+          "field": "needs_working_capital",
+          "op": "==",
+          "value": true,
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Business licence",
+        "Legal representative ID",
+        "Authorisation for tax and bank data (typical)",
+        "Proof of fund use after drawdown: contracts, payment vouchers or bank statements"
+      ],
+      "source_url": "https://www.sc.com/cn/sme-banking/qianhaiweizhong-partnership-loan/",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "RMB 3 million cap is for the co-lending version; WeBank's own ceiling was reported elsewhere as 10 million (enterprise) and as 3 million; no official page read",
+        "Rate and tenor not stated",
+        "Launch year 2017 and 1.7 million enterprises granted credit by June 2025 are from a trade-press report (https://news.pedaily.cn/20260112/121928.shtml); that page did not state amounts or rates",
+        "A cross-border e-commerce company with mostly overseas revenue may not meet WeBank's data-driven scoring; not confirmed"
+      ]
+    },
+    {
+      "id": "cn-bank-tax-credit-loan",
+      "country": "CN",
+      "name": "Bank-tax interaction credit loan (银税互动, e.g. 税易贷)",
+      "provider": "Commercial banks working with the tax authority",
+      "type": "bank_unsecured_tax_credit_loan",
+      "currency": "CNY",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "Not given. Reported as generally lower than other commercial unsecured loans; varies by bank and region.",
+      "collateral": "None (pure credit loan based on tax credit grade and tax data)",
+      "eligibility": [
+        {
+          "field": "tax_credit_grade",
+          "op": "in",
+          "value": [
+            "A",
+            "B",
+            "M"
+          ],
+          "confirmed": true
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "CN",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Online authorisation for tax credit and tax data",
+        "Business licence",
+        "Legal representative ID"
+      ],
+      "source_url": "https://cs.com.cn/xwzx/hg/201509/t20150922_4804248.html",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Grade scope (A, B, M) is from older reporting; some regions widened it to grade C during the pandemic",
+        "Local rules differ",
+        "No amounts or rates",
+        "Current national rules not read from the State Taxation Administration"
+      ]
+    },
+    {
+      "id": "cn-inclusive-small-micro-loan",
+      "country": "CN",
+      "name": "Inclusive small and micro enterprise loan (普惠型小微企业贷款)",
+      "provider": "Commercial banks (regulatory category)",
+      "type": "bank_term_loan",
+      "currency": "CNY",
+      "amount_min": null,
+      "amount_max": 10000000,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "People's Bank of China data: weighted average rate on new inclusive small-micro loans 3.48% in June 2025 (a market average, not an offer; actual price depends on the borrower).",
+      "collateral": "Varies by bank (mortgage, guarantee or credit)",
+      "eligibility": [
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "CN",
+          "confirmed": true
+        },
+        {
+          "field": "annual_revenue_local",
+          "op": "<=",
+          "value": 300000000,
+          "confirmed": false
+        }
+      ],
+      "documents_required": [
+        "Business licence",
+        "Financial statements or tax returns",
+        "12 months bank statements"
+      ],
+      "source_url": "https://www.news.cn/20250724/fd4370a4e87f4e539078b71c5c1504f4/c.html",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Single-borrower credit of 10 million yuan or less is the statistical definition, not a product limit",
+        "The 3.48% figure came from a search-result summary; the linked Xinhua article was not opened individually",
+        "Revenue ceiling for small enterprises is an assumption"
+      ]
+    },
+    {
+      "id": "cn-government-financing-guarantee-loan",
+      "country": "CN",
+      "name": "Government-backed financing guarantee for a bank loan (政府性融资担保)",
+      "provider": "Local guarantee agencies and the National Financing Guarantee Fund, with partner banks",
+      "type": "guaranteed_bank_loan",
+      "currency": "CNY",
+      "amount_min": null,
+      "amount_max": 5000000,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "Guarantee fee targeted at 1% a year or less; the fund reported an average fee of 0.72% on its partner business by March 2025. The loan rate itself is set by the bank.",
+      "collateral": "Guarantee agency may require counter-guarantees from the owner",
+      "eligibility": [
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "CN",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Business licence",
+        "Financial and tax records",
+        "Loan application at the partner bank",
+        "Owner guarantee"
+      ],
+      "source_url": "https://www.news.cn/fortune/20250414/6677c2dff23b46b6b3972fb4986bc147/c.html",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "The 5 million yuan single-borrower figure is a policy quota or subsidy threshold, not a hard limit",
+        "Other cited pages: https://www.chinanews.com.cn/cj/2025/05-08/10412223.shtml",
+        "These pages were seen only in search summaries",
+        "Tenor not found"
+      ]
+    },
+    {
+      "id": "cn-sinosure-sme-short-term-export-credit-insurance",
+      "country": "CN",
+      "name": "Short-term export credit insurance for small and micro exporters (Sinosure SME umbrella policy)",
+      "provider": "China Export & Credit Insurance Corporation (Sinosure), Shenzhen branch",
+      "type": "export_credit_insurance",
+      "currency": "CNY",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": 12,
+      "tenor_months_max": 12,
+      "indicative_rate_text": "Premium not found. Cover is for a one-year policy; free buyer credit reports were included in Shenzhen's 2022 scheme. This is insurance against buyer non-payment, not a loan; it can improve bank financing on receivables.",
+      "collateral": "None",
+      "eligibility": [
+        {
+          "field": "annual_export_usd",
+          "op": "<=",
+          "value": 8000000,
+          "confirmed": false
+        }
+      ],
+      "documents_required": [
+        "Export records",
+        "Buyer list",
+        "Customs and settlement data"
+      ],
+      "source_url": "https://www.shantou.gov.cn/attachment/0/116/116583/2348676.pdf",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Threshold is USD 6 million (Shantou policy for 2022) or USD 8 million (Shenzhen policy for 2024) of prior-year exports, depending on the local scheme and year; check the current Shenzhen notice",
+        "Premium rate and cover ratio not found",
+        "A seller on a marketplace is paid by the platform, so buyer risk is limited; relevance mostly applies to direct B2B sales"
+      ]
+    },
+    {
+      "id": "cn-platform-data-inventory-finance",
+      "country": "CN",
+      "name": "Cross-border seller inventory and logistics finance based on marketplace data",
+      "provider": "Fintech lenders and partner banks (for example Currenxie, Dowsure with Bank of China Shenzhen)",
+      "type": "inventory_finance_platform_data",
+      "currency": "CNY",
+      "amount_min": null,
+      "amount_max": 2000000,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "A promotional all-in cost 'as low as 3.99% a year' was reported for a Bank of China Shenzhen and Dowsure programme; treat as marketing, not confirmed.",
+      "collateral": "Marketplace sales data and stock; terms not found",
+      "eligibility": [
+        {
+          "field": "has_ecommerce_platform_history_months",
+          "op": ">=",
+          "value": 12,
+          "confirmed": false
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "CN",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Marketplace account authorisation",
+        "Business licence",
+        "Bank statements",
+        "Inventory and shipment records"
+      ],
+      "source_url": "https://www.gtreview.com/news/asia/this-company-is-using-amazon-data-to-offer-trade-finance-to-asian-vendors/",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "The 2 million yuan per store and 3.99% figures came from a low-quality mirror site",
+        "The GTR page describes Currenxie (Hong Kong) offering inventory and logistics finance from Amazon trading history; no amounts or rates",
+        "12-month history requirement is an assumption"
+      ]
+    },
+    {
+      "id": "uk-ggs-term-loan",
+      "country": "GB",
+      "name": "Growth Guarantee Scheme term loan (70% government guarantee to the lender)",
+      "provider": "British Business Bank accredited lenders (banks and other lenders)",
+      "type": "government_guaranteed_term_loan",
+      "currency": "GBP",
+      "amount_min": null,
+      "amount_max": 2000000,
+      "tenor_months_min": 3,
+      "tenor_months_max": 120,
+      "indicative_rate_text": "Set by each lender and reflects the guarantee; no scheme-wide rate. The borrower stays 100% liable. Reported July 2026 changes: terms up to 10 years for loans up to GBP 1.1 million and a higher turnover limit.",
+      "collateral": "Lender decides; personal guarantees may be asked; the owner's main home cannot be taken as security",
+      "eligibility": [
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "GB",
+          "confirmed": true
+        },
+        {
+          "field": "annual_revenue_local",
+          "op": "<=",
+          "value": 45000000,
+          "confirmed": true
+        },
+        {
+          "field": "insolvent",
+          "op": "==",
+          "value": false,
+          "confirmed": true
+        },
+        {
+          "field": "years_trading",
+          "op": ">=",
+          "value": 0,
+          "confirmed": false
+        }
+      ],
+      "documents_required": [
+        "12 months bank statements",
+        "Latest management accounts and filed accounts",
+        "VAT returns",
+        "Director ID",
+        "Subsidy limit confirmation"
+      ],
+      "source_url": "https://www.sparkfinance.co.uk/growth-guarantee-scheme/eligibility",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "British Business Bank scheme page was not reachable (404 or 403); details are from lender and broker pages",
+        "Turnover limit may have risen to GBP 54 million in July 2026 (https://www.simplybusiness.co.uk/knowledge/funding/growth-guarantee-scheme-updated-2026/)",
+        "Minimum tenor of 3 months is an assumption",
+        "Whether overdrafts, asset finance and invoice finance are covered was not confirmed in the pages read; Novuna offers a GGS asset-finance version (https://www.novuna.co.uk/business-finance/finance-products/growth-guarantee-scheme/)"
+      ]
+    },
+    {
+      "id": "uk-bank-overdraft",
+      "country": "GB",
+      "name": "Business overdraft",
+      "provider": "High-street banks and challenger banks (generic)",
+      "type": "bank_overdraft",
+      "currency": "GBP",
+      "amount_min": null,
+      "amount_max": 50000,
+      "tenor_months_min": 12,
+      "tenor_months_max": 12,
+      "indicative_rate_text": "One broker guide: about 11% to 35% EAR with set-up or renewal fees; another: roughly 13% to 17% EAR for overdrafts up to GBP 25,000 to 50,000.",
+      "collateral": "Often unsecured for small limits; may need a personal guarantee",
+      "eligibility": [
+        {
+          "field": "years_trading",
+          "op": ">=",
+          "value": 1,
+          "confirmed": false
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "GB",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "12 months bank statements",
+        "Latest accounts",
+        "Director ID"
+      ],
+      "source_url": "https://www.kandoo.co.uk/guides/uk-business-loan-rates-explained",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Broker and comparison-site figures only; no bank page read",
+        "Limit of GBP 50,000 is described as typical, not a rule",
+        "12-month renewal cycle assumed"
+      ]
+    },
+    {
+      "id": "uk-asset-finance",
+      "country": "GB",
+      "name": "Asset finance (hire purchase or lease) for equipment",
+      "provider": "Asset finance lenders and banks (generic)",
+      "type": "asset_finance",
+      "currency": "GBP",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": 12,
+      "tenor_months_max": 60,
+      "indicative_rate_text": "Roughly 4% to 10% a year for established businesses entering 2026, depending on the asset and term (one guide).",
+      "collateral": "The asset itself",
+      "eligibility": [
+        {
+          "field": "years_trading",
+          "op": ">=",
+          "value": 2,
+          "confirmed": false
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "GB",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Supplier quote for the asset",
+        "12 months bank statements",
+        "Latest accounts"
+      ],
+      "source_url": "https://www.kandoo.co.uk/guides/best-commercial-loans-uk-2026-guide",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Tenor range and minimum trading history are typical assumptions",
+        "No lender page read"
+      ]
+    },
+    {
+      "id": "uk-invoice-finance",
+      "country": "GB",
+      "name": "Invoice finance (factoring or discounting) on trade debtors",
+      "provider": "Invoice finance providers (generic)",
+      "type": "invoice_finance",
+      "currency": "GBP",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": 12,
+      "tenor_months_max": 12,
+      "indicative_rate_text": "Advance typically 70% to 90% of invoice value. Discount charge about SONIA plus 2.5% to 4.5% a year. Service fee commonly 0.8% to 1.8% of turnover (range 0.5% to 2.5%). Arrangement fee 0.5% to 1% of the limit. Minimum turnover about GBP 100,000 (some lenders from GBP 50,000).",
+      "collateral": "The invoices (debtor book)",
+      "eligibility": [
+        {
+          "field": "annual_revenue_local",
+          "op": ">=",
+          "value": 100000,
+          "confirmed": true
+        },
+        {
+          "field": "b2b_invoice_share",
+          "op": ">=",
+          "value": 0.1,
+          "confirmed": false
+        }
+      ],
+      "documents_required": [
+        "Debtor ledger (ageing report)",
+        "Sample invoices",
+        "Latest accounts",
+        "12 months bank statements"
+      ],
+      "source_url": "https://www.sparkfinance.co.uk/data/uk-invoice-finance-rate-index",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Broker figures only, no ABFA or British Business Bank data found",
+        "Contract length of 12 months is assumed",
+        "A 10% trade-debtor share is an assumption; a garden centre with 15% trade sales is a borderline fit"
+      ]
+    },
+    {
+      "id": "uk-revenue-based-finance-card-sales",
+      "country": "GB",
+      "name": "Revenue-based finance repaid from card sales (merchant cash advance)",
+      "provider": "YouLend and similar providers, often through payment providers",
+      "type": "revenue_based_finance",
+      "currency": "GBP",
+      "amount_min": 3000,
+      "amount_max": 1000000,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "A single fixed fee agreed up front rather than interest; repayment is a percentage of daily card sales, so it rises and falls with takings. Quoted effective cost can be high; no UK standard percentage found.",
+      "collateral": "None; repayments taken from card sales",
+      "eligibility": [
+        {
+          "field": "months_card_sales",
+          "op": ">=",
+          "value": 6,
+          "confirmed": false
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "GB",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Card processing statements",
+        "12 months bank statements"
+      ],
+      "source_url": "https://youlend.com/products/capital",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Amount range is from the provider's own UK page as reported by search summaries; the page was not opened directly",
+        "Minimum card sales history is an assumption",
+        "Regulatory status not checked against the FCA register",
+        "Approval-rate claims are the company's own"
+      ]
+    },
+    {
+      "id": "uk-unsecured-term-loan",
+      "country": "GB",
+      "name": "Unsecured business term loan from a bank or alternative lender",
+      "provider": "Banks and alternative lenders (generic)",
+      "type": "bank_term_loan_unsecured",
+      "currency": "GBP",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": 12,
+      "tenor_months_max": 60,
+      "indicative_rate_text": "Indicative index: about 10% to 18% APR for prime borrowers with 3+ years trading and about 18% to 30% for standard borrowers with 2+ years trading; high-street representative rates were quoted at about 9.9% to 15.7% APR in another guide.",
+      "collateral": "None; personal guarantee likely",
+      "eligibility": [
+        {
+          "field": "years_trading",
+          "op": ">=",
+          "value": 2,
+          "confirmed": true
+        },
+        {
+          "field": "country_registered",
+          "op": "==",
+          "value": "GB",
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "12 months bank statements",
+        "Latest accounts",
+        "Director ID"
+      ],
+      "source_url": "https://www.sparkfinance.co.uk/data/uk-business-loan-rate-index",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "Broker rate index, not a lender quote",
+        "Tenor range assumed",
+        "Bank of England Bank Rate quoted as 3.75% in early 2026 by one guide; not verified"
+      ]
+    },
+    {
+      "id": "uk-hmrc-time-to-pay",
+      "country": "GB",
+      "name": "HMRC Time to Pay payment plan for a tax bill the business cannot pay in full",
+      "provider": "HM Revenue and Customs",
+      "type": "tax_payment_plan",
+      "currency": "GBP",
+      "amount_min": null,
+      "amount_max": null,
+      "tenor_months_min": null,
+      "tenor_months_max": null,
+      "indicative_rate_text": "Not a loan. HMRC checks affordability and sets instalments. Interest on late tax may apply; the rate and length were not confirmed.",
+      "collateral": "None",
+      "eligibility": [
+        {
+          "field": "tax_arrears",
+          "op": "==",
+          "value": true,
+          "confirmed": true
+        }
+      ],
+      "documents_required": [
+        "Tax reference",
+        "Income and spending details to show affordability"
+      ],
+      "source_url": "https://www.gov.uk/difficulties-paying-hmrc",
+      "accessed_date": "2026-10-17",
+      "illustrative": true,
+      "unconfirmed": [
+        "The gov.uk overview page only says a payment plan may be possible and that HMRC checks affordability; eligibility rules, whether VAT is included, interest and duration were not on the page read",
+        "The Time to Pay page URL returned 404"
+      ]
+    }
+  ]
+}

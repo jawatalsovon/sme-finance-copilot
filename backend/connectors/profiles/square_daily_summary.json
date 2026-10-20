@@ -1,0 +1,3 @@
+{"id":"square_daily_summary","name":"Square-style daily sales summary","target":"pos_daily","detect":["Date","Gross Sales","Discounts","Net Sales","Tax","Total Collected","Cash","Card","Transactions"],
+ "columns":{"date":"Date","gross":"Gross Sales","discounts":"Discounts","net":"Net Sales","tax":"Tax","cash":"Cash","card":"Card","other":"Gift Card Redeemed","count":"Transactions"},
+ "options":{"source_system":"square_pos","location":"Hollinbank"}}

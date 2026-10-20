@@ -1,0 +1,42 @@
+[
+ {
+  "Id": "201",
+  "DocNumber": "B-77",
+  "TxnDate": "2026-08-20",
+  "DueDate": "2026-09-19",
+  "CurrencyRef": {
+   "value": "USD"
+  },
+  "TotalAmt": 750.0,
+  "Balance": 250.0,
+  "VendorRef": {
+   "value": "11",
+   "name": "Hicks Hardware"
+  },
+  "APAccountRef": {
+   "value": "49"
+  },
+  "Line": [
+   {
+    "DetailType": "AccountBasedExpenseLineDetail",
+    "Amount": 300.0,
+    "AccountBasedExpenseLineDetail": {
+     "AccountRef": {
+      "value": "77"
+     }
+    }
+   },
+   {
+    "DetailType": "ItemBasedExpenseLineDetail",
+    "Amount": 450.0,
+    "ItemBasedExpenseLineDetail": {
+     "ItemRef": {
+      "value": "2"
+     },
+     "Qty": 9,
+     "UnitPrice": 50
+    }
+   }
+  ]
+ }
+]

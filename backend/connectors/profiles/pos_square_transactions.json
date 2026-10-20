@@ -1,0 +1,4 @@
+{"id":"pos_square_transactions","name":"Square-style transactions CSV (one row per payment or refund)","target":"pos_square_tx",
+ "detect":["Transaction ID","Payment ID","Event Type","Gross Sales","Net Sales","Tip","Total Collected","Cash","Card"],
+ "columns":{"date":"Date","time":"Time","timezone":"Time Zone","gross":"Gross Sales","discount":"Discounts","net":"Net Sales","tax":"Tax","tip":"Tip","total":"Total Collected","cash":"Cash","card":"Card","order_id":"Transaction ID","payment_id":"Payment ID","event":"Event Type","location":"Location","staff":"Staff ID"},
+ "options":{"source_system":"square_pos","refund_events":["Refund"]}}

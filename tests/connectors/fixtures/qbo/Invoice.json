@@ -1,0 +1,71 @@
+[
+ {
+  "Id": "101",
+  "DocNumber": "1001",
+  "TxnDate": "2026-08-03",
+  "DueDate": "2026-09-02",
+  "CurrencyRef": {
+   "value": "USD"
+  },
+  "TotalAmt": 1080.0,
+  "Balance": 0,
+  "CustomerRef": {
+   "value": "1",
+   "name": "Amy's Bird Sanctuary"
+  },
+  "ARAccountRef": {
+   "value": "33"
+  },
+  "TxnTaxDetail": {
+   "TotalTax": 80.0
+  },
+  "Line": [
+   {
+    "DetailType": "SalesItemLineDetail",
+    "Amount": 1000.0,
+    "SalesItemLineDetail": {
+     "ItemRef": {
+      "value": "1"
+     },
+     "Qty": 10,
+     "UnitPrice": 100
+    }
+   },
+   {
+    "DetailType": "SubTotalLineDetail",
+    "Amount": 1000.0
+   }
+  ]
+ },
+ {
+  "Id": "102",
+  "DocNumber": "1002",
+  "TxnDate": "2026-09-10",
+  "DueDate": "2026-10-10",
+  "CurrencyRef": {
+   "value": "USD"
+  },
+  "TotalAmt": 540.0,
+  "Balance": 540.0,
+  "CustomerRef": {
+   "value": "2",
+   "name": "Diego Rodriguez"
+  },
+  "TxnTaxDetail": {
+   "TotalTax": 40.0
+  },
+  "Line": [
+   {
+    "DetailType": "SalesItemLineDetail",
+    "Amount": 500.0,
+    "SalesItemLineDetail": {
+     "ItemRef": {
+      "value": "2"
+     },
+     "Qty": 5,
+     "UnitPrice": 100
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,35 @@
+# secrets
+.env
+*.env
+!.env.example
+
+# private pilot data (the pilot company) — never commit
+data/private/
+reports/private/
+
+# raw public downloads (re-fetchable; see data/raw/MANIFEST.md)
+data/raw/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.duckdb
+*.duckdb.wal
+
+# node
+node_modules/
+.next/
+out/
+
+# os
+.DS_Store
+Thumbs.db
+
+# private self-hosted instance (COPILOT_PRIVATE_DIR)
+private/
+
+# generated demo data (regenerate: python scripts/data/generate.py --seed 42)
+data/synthetic/*/

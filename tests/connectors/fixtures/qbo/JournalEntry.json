@@ -1,0 +1,38 @@
+[
+ {
+  "Id": "701",
+  "DocNumber": "JE-1",
+  "TxnDate": "2026-09-30",
+  "PrivateNote": "Accrue utilities",
+  "Line": [
+   {
+    "DetailType": "JournalEntryLineDetail",
+    "Amount": 330.0,
+    "Description": "September electricity",
+    "JournalEntryLineDetail": {
+     "PostingType": "Debit",
+     "AccountRef": {
+      "value": "7"
+     }
+    }
+   },
+   {
+    "DetailType": "JournalEntryLineDetail",
+    "Amount": 330.0,
+    "Description": "September electricity",
+    "JournalEntryLineDetail": {
+     "PostingType": "Credit",
+     "AccountRef": {
+      "value": "49"
+     },
+     "Entity": {
+      "Type": "Vendor",
+      "EntityRef": {
+       "value": "10"
+      }
+     }
+    }
+   }
+  ]
+ }
+]

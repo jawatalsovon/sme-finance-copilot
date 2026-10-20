@@ -1,0 +1,16 @@
+[
+ {
+  "Id": "1",
+  "DisplayName": "Amy's Bird Sanctuary",
+  "PrimaryEmailAddr": {
+   "Address": "birds@example.com"
+  },
+  "PrimaryPhone": {
+   "FreeFormNumber": "(650) 555-3311"
+  }
+ },
+ {
+  "Id": "2",
+  "DisplayName": "Diego Rodriguez"
+ }
+]

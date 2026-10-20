@@ -1,0 +1,3 @@
+{"id":"qbo_journal","name":"QuickBooks-importable journal entries CSV","target":"journal","detect":["JournalNo","JournalDate","AccountName","Debits","Credits"],
+ "columns":{"voucher":"JournalNo","date":"JournalDate","account_name":"AccountName","debit":"Debits","credit":"Credits","memo":"Description","currency":"Currency","counterparty":"Name"},
+ "options":{"source_system":"quickbooks","dayfirst":true}}

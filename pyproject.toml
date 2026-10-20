@@ -1,0 +1,26 @@
+[project]
+name = "sme-finance-copilot"
+version = "0.1.0"
+description = "SME Finance Copilot - FinTechathon 2026 Topic E backend"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "duckdb>=1.1",
+    "pandas>=2.2",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+    "openai>=1.40",
+    "anthropic>=0.40",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+# Repo root on sys.path so `import backend` works from `pytest` at the root.
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"

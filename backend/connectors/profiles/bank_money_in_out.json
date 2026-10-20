@@ -1,0 +1,4 @@
+{"id":"bank_money_in_out","name":"Bank statement: Money In / Money Out","target":"statement","description":"UK current-account style: Date, Description, Money In, Money Out, Balance.",
+ "detect":["Date","Description","Money In","Money Out","Balance"],
+ "columns":{"date":"Date","description":"Description","credit":"Money In","debit":"Money Out","balance":"Balance"},
+ "options":{"channel":"bank","source_system":"bank_csv","amount_mode":"split","dayfirst":true}}

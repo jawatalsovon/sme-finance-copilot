@@ -1,0 +1,11 @@
+[
+  {"id": "bd_grocer", "name": "Mirpur Family Store", "country": "BD", "base_currency": "BDT",
+   "industry": "grocery_retail", "fiscal_year_start_month": 7,
+   "description": "Fictional demo SME: neighbourhood grocery in Dhaka; cash, bKash, card and household credit (baki)."},
+  {"id": "cn_xborder", "name": "Lanxin Digital Accessories Co.", "country": "CN", "base_currency": "CNY",
+   "industry": "cross_border_ecommerce", "fiscal_year_start_month": 1,
+   "description": "Fictional demo SME: Shenzhen phone/laptop accessories seller; marketplace payouts in USD, EUR and GBP."},
+  {"id": "uk_garden", "name": "Hollinbank Garden Centre", "country": "GB", "base_currency": "GBP",
+   "industry": "garden_centre", "fiscal_year_start_month": 4,
+   "description": "Fictional demo SME: independent Yorkshire garden centre; POS sales, trade accounts, QuickBooks Online."}
+]

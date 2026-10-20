@@ -1,0 +1,4 @@
+{"id":"pos_square_items","name":"Square-style transaction items CSV (one row per item sold)","target":"pos_square_items",
+ "detect":["Transaction ID","Item","Qty","SKU","Gross Sales","Net Sales"],
+ "columns":{"date":"Date","name":"Item","qty":"Qty","sku":"SKU","gross":"Gross Sales","discount":"Discounts","net":"Net Sales","tax":"Tax","order_id":"Transaction ID","category":"Category"},
+ "options":{"source_system":"square_pos"}}

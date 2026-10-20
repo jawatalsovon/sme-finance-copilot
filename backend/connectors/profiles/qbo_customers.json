@@ -1,0 +1,2 @@
+{"id":"qbo_customers","name":"QuickBooks-style customer list CSV","target":"parties","detect":["Customer","Terms"],
+ "columns":{"name":"Customer","terms":"Terms"},"options":{"kind":"customer","source_system":"quickbooks"}}

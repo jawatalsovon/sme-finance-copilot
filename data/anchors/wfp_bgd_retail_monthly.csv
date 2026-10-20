@@ -1,0 +1,408 @@
+month,commodity,unit,price_bdt,n_markets
+2019-06,Lentils (masur),KG,60.625,6
+2019-06,Oil (palm),L,65.6,6
+2019-06,Rice (coarse),KG,29.595,6
+2019-06,Wheat flour,KG,32.07,7
+2019-07,Wheat flour,KG,32.13,7
+2019-08,Lentils (masur),KG,63.07,3
+2019-08,Oil (palm),L,65.735,6
+2019-08,Wheat flour,KG,29.995,2
+2019-09,Lentils (masur),KG,58.62,4
+2019-09,Rice (coarse),KG,29.27,6
+2019-09,Wheat flour,KG,28.61,1
+2019-10,Lentils (masur),KG,59.35,6
+2019-10,Oil (palm),L,65.85,6
+2019-10,Rice (coarse),KG,28.05,6
+2019-10,Wheat flour,KG,32.5,7
+2019-11,Lentils (masur),KG,59.5,6
+2019-11,Oil (palm),L,65.9,6
+2019-11,Rice (coarse),KG,29.15,6
+2019-11,Wheat flour,KG,32.6,7
+2019-12,Lentils (masur),KG,59.45,6
+2019-12,Oil (palm),L,69.5,6
+2019-12,Rice (coarse),KG,29.0,5
+2019-12,Wheat flour,KG,32.6,7
+2020-01,Lentils (masur),KG,65.7,6
+2020-01,Oil (palm),L,79.0,6
+2020-01,Rice (coarse),KG,28.9,5
+2020-01,Wheat flour,KG,32.8,7
+2020-02,Lentils (masur),KG,69.45,6
+2020-02,Oil (palm),L,79.2,6
+2020-02,Rice (coarse),KG,30.7,5
+2020-02,Wheat flour,KG,32.6,7
+2020-03,Lentils (masur),KG,70.5,6
+2020-03,Oil (palm),L,77.2,6
+2020-03,Rice (coarse),KG,32.5,5
+2020-03,Wheat flour,KG,32.4,7
+2020-04,Lentils (masur),KG,86.36,6
+2020-04,Oil (palm),L,75.61,6
+2020-04,Rice (coarse),KG,22.5,1
+2020-04,Wheat flour,KG,32.55,7
+2020-05,Lentils (masur),KG,82.9,7
+2020-05,Oil (palm),L,72.6,7
+2020-05,Rice (coarse),KG,38.85,6
+2020-05,Wheat flour,KG,32.95,8
+2020-06,Lentils (masur),KG,76.25,8
+2020-06,Oil (palm),L,70.825,8
+2020-06,Rice (coarse),KG,38.875,8
+2020-06,Wheat flour,KG,33.08,9
+2020-07,Lentils (masur),KG,72.5,39
+2020-07,Oil (palm),L,71.0,53
+2020-07,Rice (coarse),KG,40.5,44
+2020-07,Wheat flour,KG,33.0,57
+2020-08,Lentils (masur),KG,70.18,36
+2020-08,Oil (palm),L,71.0,49
+2020-08,Rice (coarse),KG,41.0,44
+2020-08,Wheat flour,KG,33.0,52
+2020-09,Lentils (masur),KG,69.0,36
+2020-09,Oil (palm),L,77.13,48
+2020-09,Rice (coarse),KG,42.625,46
+2020-09,Wheat flour,KG,33.0,52
+2020-10,Lentils (masur),KG,69.825,34
+2020-10,Oil (palm),L,82.5,48
+2020-10,Rice (coarse),KG,44.1,41
+2020-10,Wheat flour,KG,33.0,51
+2020-11,Lentils (masur),KG,72.5,35
+2020-11,Oil (palm),L,88.065,50
+2020-11,Rice (coarse),KG,43.585,40
+2020-11,Wheat flour,KG,33.0,50
+2020-12,Lentils (masur),KG,71.015,34
+2020-12,Oil (palm),L,91.0,49
+2020-12,Rice (coarse),KG,44.0,45
+2020-12,Wheat flour,KG,33.03,49
+2021-01,Lentils (masur),KG,71.0,34
+2021-01,Oil (palm),L,99.5,47
+2021-01,Rice (coarse),KG,43.0,18
+2021-01,Wheat flour,KG,33.2,50
+2021-02,Lentils (masur),KG,71.0,33
+2021-02,Oil (palm),L,101.2,49
+2021-02,Rice (coarse),KG,44.525,16
+2021-02,Wheat flour,KG,33.5,49
+2021-03,Lentils (masur),KG,70.68,33
+2021-03,Oil (palm),L,105.68,50
+2021-03,Rice (coarse),KG,45.71,16
+2021-03,Wheat flour,KG,34.0,49
+2021-04,Lentils (masur),KG,71.0,33
+2021-04,Oil (palm),L,108.405,50
+2021-04,Rice (coarse),KG,44.85,16
+2021-04,Wheat flour,KG,34.0,49
+2021-05,Lentils (masur),KG,71.29,32
+2021-05,Oil (palm),L,111.17,49
+2021-05,Rice (coarse),KG,43.1,48
+2021-05,Wheat flour,KG,34.0,49
+2021-06,Lentils (masur),KG,74.5,33
+2021-06,Oil (palm),L,113.775,48
+2021-06,Rice (coarse),KG,42.935,44
+2021-06,Wheat flour,KG,34.5,47
+2021-07,Lentils (masur),KG,74.5,34
+2021-07,Oil (palm),L,112.34,47
+2021-07,Rice (coarse),KG,44.505,44
+2021-07,Wheat flour,KG,34.5,47
+2021-08,Lentils (masur),KG,76.115,34
+2021-08,Oil (palm),L,115.0,48
+2021-08,Rice (coarse),KG,44.79,43
+2021-08,Wheat flour,KG,34.5,47
+2021-09,Lentils (masur),KG,84.985,34
+2021-09,Oil (palm),L,121.125,48
+2021-09,Rice (coarse),KG,44.18,41
+2021-09,Wheat flour,KG,35.16,46
+2021-10,Lentils (masur),KG,87.335,34
+2021-10,Oil (palm),L,127.76,48
+2021-10,Rice (coarse),KG,43.12,43
+2021-10,Wheat flour,KG,36.415,46
+2021-11,Lentils (masur),KG,87.5,34
+2021-11,Oil (palm),L,132.36,47
+2021-11,Rice (coarse),KG,43.0,46
+2021-11,Wheat flour,KG,38.22,46
+2021-12,Lentils (masur),KG,89.245,34
+2021-12,Oil (palm),L,131.74,48
+2021-12,Rice (coarse),KG,42.34,9
+2021-12,Wheat flour,KG,39.865,46
+2022-01,Lentils (masur),KG,92.91,35
+2022-01,Oil (palm),L,133.0,49
+2022-01,Rice (coarse),KG,42.34,9
+2022-01,Wheat flour,KG,40.785,46
+2022-02,Lentils (masur),KG,95.0,35
+2022-02,Oil (palm),L,140.98,49
+2022-02,Rice (coarse),KG,43.02,7
+2022-02,Wheat flour,KG,41.0,47
+2022-03,Lentils (masur),KG,95.61,35
+2022-03,Oil (palm),L,145.14,48
+2022-03,Rice (coarse),KG,42.65,7
+2022-03,Wheat flour,KG,41.35,47
+2022-04,Lentils (masur),KG,97.45,35
+2022-04,Oil (palm),L,147.13,49
+2022-04,Rice (coarse),KG,41.0,7
+2022-04,Wheat flour,KG,42.0,47
+2022-05,Lentils (masur),KG,99.57,34
+2022-05,Oil (palm),L,168.815,50
+2022-05,Rice (coarse),KG,43.75,42
+2022-05,Wheat flour,KG,44.37,47
+2022-06,Lentils (masur),KG,103.265,34
+2022-06,Oil (palm),L,168.84,49
+2022-06,Rice (coarse),KG,44.32,41
+2022-06,Wheat flour,KG,48.75,46
+2022-07,Lentils (masur),KG,102.5,34
+2022-07,Oil (palm),L,152.115,50
+2022-07,Rice (coarse),KG,44.99,39
+2022-07,Wheat flour,KG,49.09,46
+2022-08,Lentils (masur),KG,102.69,35
+2022-08,Oil (palm),L,136.835,50
+2022-08,Rice (coarse),KG,46.51,41
+2022-08,Wheat flour,KG,51.76,47
+2022-09,Lentils (masur),KG,101.48,35
+2022-09,Oil (palm),L,135.96,51
+2022-09,Rice (coarse),KG,47.74,41
+2022-09,Wheat flour,KG,55.9,46
+2022-10,Lentils (masur),KG,98.52,36
+2022-10,Oil (palm),L,123.57,51
+2022-10,Rice (coarse),KG,47.0,42
+2022-10,Wheat flour,KG,57.63,46
+2022-11,Lentils (masur),KG,100.8,33
+2022-11,Oil (palm),L,125.765,50
+2022-11,Rice (coarse),KG,48.07,43
+2022-11,Wheat flour,KG,63.535,46
+2022-12,Lentils (masur),KG,100.0,35
+2022-12,Oil (palm),L,124.26,50
+2022-12,Rice (coarse),KG,48.0,46
+2022-12,Wheat flour,KG,67.93,46
+2023-01,Lentils (masur),KG,99.35,35
+2023-01,Oil (palm),L,120.985,50
+2023-01,Rice (coarse),KG,46.49,11
+2023-01,Wheat flour,KG,68.44,47
+2023-02,Lentils (masur),KG,100.31,35
+2023-02,Oil (palm),L,123.21,50
+2023-02,Rice (coarse),KG,46.71,11
+2023-02,Wheat flour,KG,67.02,48
+2023-03,Lentils (masur),KG,98.85,35
+2023-03,Oil (palm),L,128.165,50
+2023-03,Rice (coarse),KG,46.27,11
+2023-03,Wheat flour,KG,66.945,48
+2023-04,Lentils (masur),KG,97.61,35
+2023-04,Oil (palm),L,128.25,51
+2023-04,Rice (coarse),KG,46.31,11
+2023-04,Wheat flour,KG,65.84,48
+2023-05,Lentils (masur),KG,97.5,33
+2023-05,Oil (palm),L,133.66,51
+2023-05,Rice (coarse),KG,46.25,46
+2023-05,Wheat flour,KG,65.36,48
+2023-06,Lentils (masur),KG,97.5,33
+2023-06,Oil (palm),L,131.685,52
+2023-06,Rice (coarse),KG,45.71,44
+2023-06,Wheat flour,KG,63.075,48
+2023-07,Lentils (masur),KG,97.5,33
+2023-07,Oil (palm),L,129.62,52
+2023-07,Rice (coarse),KG,45.88,44
+2023-07,Wheat flour,KG,61.8,47
+2023-08,Lentils (masur),KG,97.5,62
+2023-08,Oil (palm),L,129.0,58
+2023-08,Rice (coarse),KG,47.0,56
+2023-08,Wheat flour,KG,58.0,60
+2023-09,Lentils (masur),KG,101.5,59
+2023-09,Oil (palm),L,127.625,60
+2023-09,Rice (coarse),KG,47.0,52
+2023-09,Wheat flour,KG,56.0,62
+2023-10,Lentils (masur),KG,106.0,63
+2023-10,Oil (palm),L,125.25,62
+2023-10,Rice (coarse),KG,45.0,45
+2023-10,Wheat flour,KG,52.5,59
+2023-11,Lentils (masur),KG,108.3,64
+2023-11,Oil (palm),L,126.0,62
+2023-11,Rice (coarse),KG,46.0,54
+2023-11,Wheat flour,KG,53.5,64
+2023-12,Lentils (masur),KG,109.0,64
+2023-12,Oil (palm),L,127.0,59
+2023-12,Rice (coarse),KG,47.0,51
+2023-12,Wheat flour,KG,55.0,64
+2024-01,Lentils (masur),KG,111.0,64
+2024-01,Oil (palm),L,127.0,62
+2024-01,Rice (coarse),KG,47.9,58
+2024-01,Wheat flour,KG,56.15,64
+2024-02,Lentils (masur),KG,111.0,67
+2024-02,Oil (palm),L,127.0,63
+2024-02,"Oil (soybean, fortified)",L,178.75,4
+2024-02,Rice (coarse),KG,49.0,57
+2024-02,Sugar,KG,125.0,4
+2024-02,Wheat flour,KG,55.5,67
+2024-03,Lentils (masur),KG,111.0,64
+2024-03,Oil (palm),L,127.4,62
+2024-03,Rice (coarse),KG,49.0,65
+2024-03,Wheat flour,KG,55.0,64
+2024-04,Lentils (masur),KG,111.75,64
+2024-04,Oil (palm),L,129.3,63
+2024-04,Rice (coarse),KG,49.0,64
+2024-04,Wheat flour,KG,55.15,64
+2024-05,Lentils (masur),KG,109.0,64
+2024-05,Oil (palm),L,130.0,62
+2024-05,Rice (coarse),KG,49.0,61
+2024-05,Wheat flour,KG,53.0,64
+2024-06,Lentils (masur),KG,110.4,26
+2024-06,Oil (palm),L,129.0,62
+2024-06,Rice (coarse),KG,49.0,49
+2024-06,Wheat flour,KG,52.5,64
+2024-07,Lentils (masur),KG,110.0,64
+2024-07,Oil (palm),L,129.4,62
+2024-07,Rice (coarse),KG,49.3,55
+2024-07,Wheat flour,KG,52.5,64
+2024-08,Lentils (masur),KG,112.15,64
+2024-08,Oil (palm),L,131.0,62
+2024-08,Rice (coarse),KG,50.0,57
+2024-08,Wheat flour,KG,52.5,64
+2024-09,Eggs (brown),1 piece,12.94,65
+2024-09,Lentils (masur),KG,111.75,64
+2024-09,Oil (palm),L,136.0,62
+2024-09,"Oil (soybean, fortified)",L,152.0,63
+2024-09,Rice (coarse),KG,51.0,56
+2024-09,Sugar,KG,129.0,54
+2024-09,Wheat flour,KG,51.875,64
+2024-10,Eggs (brown),1 piece,13.19,65
+2024-10,Lentils (masur),KG,110.0,68
+2024-10,Oil (palm),L,147.0,64
+2024-10,"Oil (soybean, fortified)",L,158.0,68
+2024-10,Rice (coarse),KG,51.0,58
+2024-10,Sugar,KG,129.0,57
+2024-10,Wheat flour,KG,51.0,67
+2024-11,Eggs (brown),1 piece,12.3,65
+2024-11,Lentils (masur),KG,110.0,68
+2024-11,Oil (palm),L,158.8,65
+2024-11,"Oil (soybean, fortified)",L,167.0,68
+2024-11,Rice (coarse),KG,52.5,56
+2024-11,Sugar,KG,128.0,60
+2024-11,Wheat flour,KG,51.0,66
+2024-12,Eggs (brown),1 piece,11.67,63
+2024-12,Lentils (masur),KG,108.625,50
+2024-12,Oil (palm),L,159.95,51
+2024-12,"Oil (soybean, fortified)",L,169.285,64
+2024-12,Rice (coarse),KG,52.14,41
+2024-12,Sugar,KG,126.075,58
+2024-12,Wheat flour,KG,51.0,50
+2025-01,Eggs (brown),1 piece,11.12,61
+2025-01,Lentils (masur),KG,108.215,46
+2025-01,Oil (palm),L,159.215,48
+2025-01,"Oil (soybean, fortified)",L,171.965,60
+2025-01,Rice (coarse),KG,53.0,35
+2025-01,Sugar,KG,124.35,53
+2025-01,Wheat flour,KG,50.0,45
+2025-02,Eggs (brown),1 piece,10.95,60
+2025-02,Lentils (masur),KG,107.5,50
+2025-02,Oil (palm),L,156.68,49
+2025-02,"Oil (soybean, fortified)",L,177.05,61
+2025-02,Rice (coarse),KG,53.0,35
+2025-02,Sugar,KG,123.22,55
+2025-02,Wheat flour,KG,51.0,47
+2025-03,Eggs (brown),1 piece,10.25,59
+2025-03,Lentils (masur),KG,107.5,45
+2025-03,Oil (palm),L,153.11,47
+2025-03,"Oil (soybean, fortified)",L,170.205,58
+2025-03,Rice (coarse),KG,53.155,34
+2025-03,Sugar,KG,121.1,53
+2025-03,Wheat flour,KG,49.5,45
+2025-04,Eggs (brown),1 piece,10.41,61
+2025-04,Lentils (masur),KG,107.47,49
+2025-04,Oil (palm),L,154.15,50
+2025-04,"Oil (soybean, fortified)",L,167.59,62
+2025-04,Rice (coarse),KG,52.945,34
+2025-04,Sugar,KG,119.0,56
+2025-04,Wheat flour,KG,49.0,50
+2025-05,Eggs (brown),1 piece,11.08,61
+2025-05,Lentils (masur),KG,105.0,49
+2025-05,Oil (palm),L,155.0,51
+2025-05,"Oil (soybean, fortified)",L,167.5,62
+2025-05,Rice (coarse),KG,52.5,35
+2025-05,Sugar,KG,117.24,57
+2025-05,Wheat flour,KG,49.0,50
+2025-06,Eggs (brown),1 piece,10.465,48
+2025-06,Lentils (masur),KG,103.75,39
+2025-06,Oil (palm),L,153.03,44
+2025-06,"Oil (soybean, fortified)",L,166.75,52
+2025-06,Rice (coarse),KG,52.97,29
+2025-06,Sugar,KG,112.5,46
+2025-06,Wheat flour,KG,49.0,40
+2025-07,Eggs (brown),1 piece,10.06,47
+2025-07,Lentils (masur),KG,102.5,38
+2025-07,Oil (palm),L,152.53,41
+2025-07,"Oil (soybean, fortified)",L,165.73,49
+2025-07,Rice (coarse),KG,53.635,28
+2025-07,Sugar,KG,110.15,44
+2025-07,Wheat flour,KG,49.93,38
+2025-08,Eggs (brown),1 piece,11.66,47
+2025-08,Lentils (masur),KG,102.5,38
+2025-08,Oil (palm),L,153.57,42
+2025-08,"Oil (soybean, fortified)",L,168.785,50
+2025-08,Rice (coarse),KG,53.55,28
+2025-08,Sugar,KG,107.8,45
+2025-08,Wheat flour,KG,51.0,39
+2025-09,Eggs (brown),1 piece,11.25,46
+2025-09,Lentils (masur),KG,102.5,36
+2025-09,Oil (palm),L,156.23,43
+2025-09,"Oil (soybean, fortified)",L,171.92,49
+2025-09,Rice (coarse),KG,53.0,29
+2025-09,Sugar,KG,107.5,44
+2025-09,Wheat flour,KG,52.645,40
+2025-10,Eggs (brown),1 piece,11.355,48
+2025-10,Lentils (masur),KG,102.5,39
+2025-10,Oil (palm),L,157.75,43
+2025-10,"Oil (soybean, fortified)",L,174.195,50
+2025-10,Rice (coarse),KG,52.5,30
+2025-10,Sugar,KG,105.75,45
+2025-10,Wheat flour,KG,54.5,41
+2025-11,Lentils (masur),KG,100.0,4
+2025-11,Oil (palm),L,171.0,3
+2025-11,"Oil (soybean, fortified)",L,190.0,4
+2025-11,Sugar,KG,102.5,4
+2025-11,Wheat flour,KG,60.0,4
+2025-12,Eggs (brown),1 piece,9.7,47
+2025-12,Lentils (masur),KG,95.0,37
+2025-12,Oil (palm),L,156.5,43
+2025-12,"Oil (soybean, fortified)",L,175.36,49
+2025-12,Rice (coarse),KG,51.95,29
+2025-12,Sugar,KG,98.075,44
+2025-12,Wheat flour,KG,54.5,41
+2026-01,Lentils (masur),KG,97.5,4
+2026-01,Oil (palm),L,156.105,44
+2026-01,"Oil (soybean, fortified)",L,192.5,4
+2026-01,Sugar,KG,104.15,4
+2026-01,Wheat flour,KG,56.5,4
+2026-02,Eggs (brown),1 piece,9.21,47
+2026-02,Lentils (masur),KG,89.34,38
+2026-02,Oil (palm),L,157.0,44
+2026-02,"Oil (soybean, fortified)",L,181.0,50
+2026-02,Rice (coarse),KG,51.29,27
+2026-02,Sugar,KG,101.16,44
+2026-02,Wheat flour,KG,54.59,41
+2026-03,Eggs (brown),1 piece,9.06,47
+2026-03,Lentils (masur),KG,92.5,38
+2026-03,Oil (palm),L,159.56,44
+2026-03,"Oil (soybean, fortified)",L,184.82,50
+2026-03,Rice (coarse),KG,51.0,27
+2026-03,Sugar,KG,101.31,44
+2026-03,Wheat flour,KG,54.5,41
+2026-04,Eggs (brown),1 piece,9.97,47
+2026-04,Lentils (masur),KG,90.0,39
+2026-04,Oil (palm),L,166.76,43
+2026-04,"Oil (soybean, fortified)",L,189.5,49
+2026-04,Rice (coarse),KG,49.7,27
+2026-04,Sugar,KG,102.5,44
+2026-04,Wheat flour,KG,54.45,40
+2026-05,Eggs (brown),1 piece,11.54,87
+2026-05,Lentils (masur),KG,92.5,79
+2026-05,Oil (palm),L,168.0,72
+2026-05,"Oil (soybean, fortified)",L,189.41,86
+2026-05,Rice (coarse),KG,49.0,45
+2026-05,Sugar,KG,103.23,85
+2026-05,Wheat flour,KG,54.5,75
+2026-06,Eggs (brown),1 piece,10.4,86
+2026-06,Lentils (masur),KG,92.5,72
+2026-06,Oil (palm),L,168.5,67
+2026-06,"Oil (soybean, fortified)",L,189.0,80
+2026-06,Rice (coarse),KG,49.0,47
+2026-06,Sugar,KG,103.8,81
+2026-06,Wheat flour,KG,54.5,70
+2026-07,Eggs (brown),1 piece,10.6,87
+2026-07,Lentils (masur),KG,92.5,75
+2026-07,Oil (palm),L,167.5,68
+2026-07,"Oil (soybean, fortified)",L,188.8,82
+2026-07,Rice (coarse),KG,49.0,46
+2026-07,Sugar,KG,104.5,84
+2026-07,Wheat flour,KG,54.5,73
+2026-08,Wheat flour,KG,55.9,75

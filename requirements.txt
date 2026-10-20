@@ -1,0 +1,17 @@
+# Pinned versions verified on the dev machine (Python 3.13, Windows 11) on 2026-10-17.
+# Ranges live in pyproject.toml; install with:  pip install -r requirements.txt
+fastapi==0.143.3
+uvicorn[standard]==0.54.0
+starlette==1.8.0
+duckdb==1.5.6
+pandas==3.0.6
+numpy==2.5.4
+pydantic==2.14.1
+python-dotenv==1.2.4
+openai==3.33.0
+anthropic==1.15.0
+httpx==0.28.1
+pytest==9.1.1
+openpyxl==3.1.5
+xlrd==2.0.2
+python-pptx==1.0.2

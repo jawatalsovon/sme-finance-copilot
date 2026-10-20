@@ -1,0 +1,4 @@
+{"id":"bank_debit_credit","name":"Bank statement: Debit / Credit (corporate)","target":"statement","description":"Transaction Date, Value Date, Counterparty, Summary, Reference, Debit, Credit, Balance (Chinese corporate-bank style).",
+ "detect":["Transaction Date","Counterparty","Summary","Debit","Credit","Balance"],
+ "columns":{"date":"Transaction Date","value_date":"Value Date","description":"Summary","counterparty":"Counterparty","reference":"Reference","debit":"Debit","credit":"Credit","balance":"Balance"},
+ "options":{"channel":"bank","source_system":"bank_csv","amount_mode":"split","dayfirst":false}}

@@ -1,0 +1,26 @@
+{
+ "id": "square_deposits",
+ "name": "Square-style deposits (payouts)",
+ "target": "statement",
+ "description": "Deposit Date, Deposit ID, Status, Card Sales (Gross), Fees, Net Deposit. Net deposit is the movement; Fees is kept in fee.",
+ "detect": [
+  "Deposit Date",
+  "Deposit ID",
+  "Net Deposit",
+  "Fees"
+ ],
+ "columns": {
+  "date": "Deposit Date",
+  "external_txn_id": "Deposit ID",
+  "amount": "Net Deposit",
+  "fee": "Fees"
+ },
+ "options": {
+  "channel": "pos_settlement",
+  "source_system": "square_pos",
+  "amount_mode": "signed",
+  "dayfirst": false,
+  "description": "Square deposit (net of fees)",
+  "statement_ref": "Square payouts"
+ }
+}
